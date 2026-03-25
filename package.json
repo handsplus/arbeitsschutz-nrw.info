@@ -6,10 +6,13 @@
     "node": "20.x"
   },
   "scripts": {
-    "dev": "node node_modules/next/dist/bin/next dev -p 3010",
+    "dev": "node scripts/dev.js",
+    "dev:fresh": "node scripts/kill-port-3010.js && node scripts/dev.js",
+    "dev:reset": "node scripts/dev-reset.js",
     "build": "node node_modules/next/dist/bin/next build",
     "start": "node node_modules/next/dist/bin/next start -p 3010",
-    "lint": "node node_modules/next/dist/bin/next lint"
+    "lint": "node node_modules/next/dist/bin/next lint",
+    "clean": "node scripts/clean-next.js"
   },
   "dependencies": {
     "next": "^14.2.0",

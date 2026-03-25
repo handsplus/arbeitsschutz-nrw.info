@@ -16,6 +16,24 @@ npm run dev
 
 Die Anwendung läuft unter [http://localhost:3010](http://localhost:3010).
 
+**Hinweis:** `ERR_CONNECTION_REFUSED` bedeutet: **kein Dev-Server** – im Projektordner `npm run dev` starten (Terminal offen lassen).
+
+Bei kaputtem Build-Cache (weiße Seite / `Cannot find module './xxx.js'`): **`npm run dev:reset`** (löscht `.next`, startet den Server neu).
+
+### Weiße Seite, Internal Server Error oder `Cannot find module './xxx.js'`
+
+Der Ordner **`.next`** (Build-Cache) wird von Next.js oft **während** des Schreibens von **OneDrive** synchronisiert – dabei entstehen **kaputte Webpack-Chunks** (`898.js`, `682.js` fehlen). Die Seite lief kurz, bricht dann mit **500** ab.
+
+**Empfehlung (zuverlässig):** Projekt **nicht** unter OneDrive entwickeln, z. B. nach `C:\dev\arbeitsschutz-nrw.info` kopieren und dort `npm install` / `npm run dev`.
+
+**Oder einmal reparieren:**
+
+1. **Dev-Server stoppen:** `Strg+C`
+2. **`npm run clean`** (löscht `.next`)
+3. **`npm run dev`** neu starten
+
+Wenn es wieder knirscht: Schritt 2 wiederholen oder Projekt aus OneDrive verschieben.
+
 ## Produktion
 
 ```bash

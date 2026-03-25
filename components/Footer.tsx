@@ -6,6 +6,14 @@ const officialLinks = [
   { href: 'https://www.dguv.de/', label: 'DGUV – Deutsche Gesetzliche Unfallversicherung (offiziell)' },
 ];
 
+/** Weitere Angebote von Health and Safety + (verwandte Webauftritte) */
+const relatedSites = [
+  { href: 'https://sigeko.koeln', label: 'sigeko.koeln' },
+  { href: 'https://arbeitssicherheit.nrw', label: 'arbeitssicherheit.nrw' },
+  { href: 'https://brandschutzkoeln.com', label: 'brandschutzkoeln.com' },
+  { href: 'https://arbeitssicherheitkoeln.de', label: 'arbeitssicherheitkoeln.de' },
+];
+
 export function Footer() {
   return (
     <footer className="footer">
@@ -25,7 +33,9 @@ export function Footer() {
             </a>
           </p>
           <p className="footer-disclaimer-short">
-            Privates Informationsangebot, nicht die offizielle Seite der Arbeitsschutzverwaltung NRW. Inhalte verweisen auf die offiziellen Quellen.
+            Privates Informationsangebot, nicht die offizielle Seite der Arbeitsschutzverwaltung NRW.
+            Keine eigene Aufarbeitung von Fach- oder Rechtsfragen – Orientierung und Verweise auf die
+            offiziellen Quellen.
           </p>
         </div>
         <div className="footer-pages">
@@ -50,6 +60,21 @@ export function Footer() {
               </li>
             ))}
           </ul>
+        </div>
+        <div className="footer-related">
+          <p className="footer-title">Weitere Webangebote</p>
+          <ul>
+            {relatedSites.map((link) => (
+              <li key={link.href}>
+                <a href={link.href} target="_blank" rel="noopener noreferrer">
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <p className="footer-related-note">
+            Angebote von Health and Safety + – keine offiziellen Behördenangebote.
+          </p>
         </div>
       </div>
       <div className="footer-bottom">

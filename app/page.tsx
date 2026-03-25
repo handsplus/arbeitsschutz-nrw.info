@@ -1,5 +1,63 @@
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
+import { SiteSearchSkeleton } from '@/components/SiteSearchSkeleton';
 import { SourceLink } from '@/components/SourceLink';
+
+const SiteSearch = dynamic(
+  () => import('@/components/SiteSearch').then((m) => ({ default: m.SiteSearch })),
+  { loading: () => <SiteSearchSkeleton />, ssr: false }
+);
+
+function IconMail({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden
+    >
+      <path
+        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="m22 6-10 7L2 6"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+function IconPhone({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden
+    >
+      <path
+        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
 
 const aktuelles = [
   {
@@ -143,40 +201,81 @@ const services = [
 export default function HomePage() {
   return (
     <div className="container">
-      <div className="page-head">
-        <h1>Arbeitsschutz in Nordrhein-Westfalen</h1>
-        <p className="page-intro lead">
-          Dieses Portal bündelt Informationen zum Arbeitsschutz in NRW und verweist
-          auf die offiziellen Angebote der{' '}
-          <a href="https://www.arbeitsschutz.nrw.de/" target="_blank" rel="noopener noreferrer">
-            Arbeitsschutzverwaltung Nordrhein-Westfalen
-          </a>
-          , von{' '}
-          <a href="https://www.komnet.nrw.de/" target="_blank" rel="noopener noreferrer">
-            KomNet
-          </a>{' '}
-          (Landesamt für Gesundheit und Arbeitsschutz NRW) und der{' '}
-          <a href="https://www.dguv.de/" target="_blank" rel="noopener noreferrer">
-            Deutschen Gesetzlichen Unfallversicherung (DGUV)
-          </a>
-          . Es ersetzt diese nicht.
-        </p>
-        <p className="page-intro page-intro-mission">
-          Mit diesem Angebot verfolgen wir von <Link href="/beratung-handsplus">Health and Safety +</Link> ein klares Ziel: Ihnen einen echten Mehrwert zu bieten – übersichtlich aufbereitete Informationen, direkte Wege zu den offiziellen Stellen und transparente Kommunikation.
-        </p>
+      <div className="page-head page-head-with-search">
+        <div className="page-head-main">
+          <h1>Arbeitsschutz in Nordrhein-Westfalen</h1>
+          <p className="page-intro lead">
+            Dieses Portal hilft beim Einstieg zum Thema Arbeitsschutz in NRW: Es verweist
+            auf die offiziellen Angebote der{' '}
+            <a href="https://www.arbeitsschutz.nrw.de/" target="_blank" rel="noopener noreferrer">
+              Arbeitsschutzverwaltung Nordrhein-Westfalen
+            </a>
+            , von{' '}
+            <a href="https://www.komnet.nrw.de/" target="_blank" rel="noopener noreferrer">
+              KomNet
+            </a>{' '}
+            (Landesamt für Gesundheit und Arbeitsschutz NRW) und der{' '}
+            <a href="https://www.dguv.de/" target="_blank" rel="noopener noreferrer">
+              Deutschen Gesetzlichen Unfallversicherung (DGUV)
+            </a>
+            . Hier werden keine Inhalte der Behörden ersetzt und keine Einzelfälle oder
+            Rechtsfragen bearbeitet – dafür sind die verlinkten Stellen zuständig.
+          </p>
+          <p className="page-intro page-intro-mission">
+            Betrieben von <Link href="/beratung-handsplus">Health and Safety +</Link>:
+            Übersichtliche Verweise statt eigener Fachaufarbeitung – die ausführlichen
+            Informationen und Beratungsangebote finden Sie auf den verlinkten Seiten.
+          </p>
+        </div>
+        <aside className="page-head-aside" aria-label="Suche im Informationsportal">
+          <SiteSearch />
+        </aside>
       </div>
 
-      <div className="promo-banner">
-        <p>
-          <strong>Sie wünschen professionelle Unterstützung im Arbeitsschutz?</strong>{' '}
-          Health and Safety + berät Unternehmen in NRW – Gefährdungsbeurteilung, Brandschutz, SiGeKo, Schulungen. Kostenlose Erstberatung.
-        </p>
-        <p className="promo-cta">
-          <a href="/beratung-handsplus">Mehr zu Health and Safety +</a>
-          {' · '}
-          <a href="https://www.handsplus.de/" target="_blank" rel="noopener noreferrer">www.handsplus.de</a>
-        </p>
-      </div>
+      <aside className="promo-banner" aria-labelledby="promo-hs-title">
+        <div className="promo-banner-inner">
+          <p className="promo-banner-kicker">Beratung · Health and Safety +</p>
+          <h2 id="promo-hs-title" className="promo-banner-title">
+            Unternehmerische Unterstützung im Arbeitsschutz gesucht?
+          </h2>
+          <p className="promo-banner-text">
+            Health and Safety + ist in NRW tätig – u. a. zu Gefährdungsbeurteilung,
+            Brandschutz, SiGeKo und Schulungen. Unverbindliche Erstberatung ist möglich;
+            Details und Leistungsumfang auf den verlinkten Seiten.
+          </p>
+          <div className="promo-banner-actions">
+            <Link href="/beratung-handsplus" className="promo-btn promo-btn-primary">
+              Mehr zu Health and Safety +
+            </Link>
+            <a
+              href="https://www.handsplus.de/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="promo-btn promo-btn-outline"
+            >
+              www.handsplus.de
+            </a>
+            <div className="promo-banner-icon-pair">
+              <a
+                href="mailto:kontakt@handsplus.de"
+                className="promo-btn promo-btn-outline promo-btn-icon-only"
+                aria-label="E-Mail an kontakt@handsplus.de"
+                title="kontakt@handsplus.de"
+              >
+                <IconMail className="promo-btn-icon" />
+              </a>
+              <a
+                href="tel:+4915228261619"
+                className="promo-btn promo-btn-outline promo-btn-icon-only"
+                aria-label="Anrufen: 0152 282 61619"
+                title="0152 282 61619"
+              >
+                <IconPhone className="promo-btn-icon" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </aside>
 
       <section className="content-section schnellzugriff-section">
         <h2>Schnellzugriff: Was suchen Sie?</h2>
@@ -214,7 +313,9 @@ export default function HomePage() {
       <section className="content-section">
         <h2>Informationen und Dienste im Überblick</h2>
         <p className="section-lead">
-          Alle wichtigen Themen, Beratungsangebote und Links zu Anträgen, Formularen und Publikationen – strukturiert für Sie zusammengestellt.
+          Themenfelder und Verweise zu Anträgen, Formularen und Publikationen – zum
+          Orientieren und Weiterklicken; die vertiefenden Informationen stehen auf den
+          jeweiligen offiziellen Seiten.
         </p>
         <div className="card-grid card-grid-large">
           {services.map((item) => (

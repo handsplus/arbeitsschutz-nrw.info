@@ -31,9 +31,10 @@ export default function ImpressumPage() {
         <h2>Anbieter dieses Portals</h2>
         <p>
           Das Informationsportal <strong>arbeitsschutz-nrw.info</strong> wird von
-          Health and Safety + (handsplus.de) betrieben. Es dient der gebündelten Information
-          zum Arbeitsschutz in NRW und verweist auf offizielle Quellen. Zugleich
-          weist es auf die Beratungsleistungen von Health and Safety + hin. Weitere
+          Health and Safety + (handsplus.de) betrieben. Es dient der Orientierung
+          zum Arbeitsschutz in NRW und verweist auf offizielle Quellen; eine eigene
+          inhaltliche Aufarbeitung findet hier nicht statt. Zugleich weist es auf die
+          Beratungsleistungen von Health and Safety + hin. Weitere
           Informationen zum Unternehmen und zu Leistungen:{' '}
           <a href="https://www.handsplus.de/" target="_blank" rel="noopener noreferrer">
             www.handsplus.de
