@@ -21,7 +21,11 @@ export default function DatenschutzPage() {
         <p>
           Verantwortlich für die Datenverarbeitung auf dieser Website im Sinne
           der DSGVO ist der Betreiber des Portals: <strong>Health and Safety +</strong>.
-          Kontakt: <a href="https://www.handsplus.de/kontakt">www.handsplus.de/kontakt</a>,{' '}
+          Kontakt:{' '}
+          <a href="https://www.handsplus.de/kontakt" target="_blank" rel="noopener noreferrer">
+            www.handsplus.de/kontakt
+          </a>
+          ,{' '}
           <a href="mailto:kontakt@handsplus.de">kontakt@handsplus.de</a>.
         </p>
       </section>
@@ -34,6 +38,17 @@ export default function DatenschutzPage() {
           (z. B. Name, E-Mail) erhoben werden, erfolgt dies nur im Rahmen der
           gesetzlichen Bestimmungen oder mit Ihrer Einwilligung. Eine
           Weitergabe an Dritte zu Werbezwecken erfolgt nicht.
+        </p>
+      </section>
+
+      <section className="content-section">
+        <h2>Cookie-Hinweis und lokale Speicherung</h2>
+        <p>
+          Beim ersten Besuch kann ein Hinweis zu Cookies eingeblendet werden.
+          Ihre Auswahl (z. B. Akzeptieren oder Ablehnen) wird im Browser lokal
+          gespeichert (technisch notwendig für die Anzeige des Hinweises), damit
+          der Banner nicht bei jedem Seitenaufruf erneut erscheint. Es werden
+          keine Analyse-Cookies zu Werbe- oder Profilierungszwecken gesetzt.
         </p>
       </section>
 

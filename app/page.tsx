@@ -223,7 +223,7 @@ export default function HomePage() {
           </p>
           <p className="page-intro page-intro-mission">
             Betrieben von <Link href="/beratung-handsplus">Health and Safety +</Link>:
-            Übersichtliche Verweise statt eigener Fachaufarbeitung – die ausführlichen
+            Übersichtliche Verweise statt eigener Fachbearbeitung – die ausführlichen
             Informationen und Beratungsangebote finden Sie auf den verlinkten Seiten.
           </p>
         </div>
@@ -240,8 +240,9 @@ export default function HomePage() {
           </h2>
           <p className="promo-banner-text">
             Health and Safety + ist in NRW tätig – u. a. zu Gefährdungsbeurteilung,
-            Brandschutz, SiGeKo und Schulungen. Unverbindliche Erstberatung ist möglich;
-            Details und Leistungsumfang auf den verlinkten Seiten.
+            Brandschutz, SiGeKo, Elektrosicherheit, Schulungen und Managementsystemen
+            (z. B. ISO 45001). Unverbindliche Erstberatung ist möglich; Details auf
+            handsplus.de und unter „Beratung H&amp;S+“ in diesem Portal.
           </p>
           <div className="promo-banner-actions">
             <Link href="/beratung-handsplus" className="promo-btn promo-btn-primary">

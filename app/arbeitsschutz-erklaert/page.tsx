@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { HandsplusTeaser } from '@/components/HandsplusTeaser';
 import { SourceLink } from '@/components/SourceLink';
 
 export const metadata = { title: 'Arbeitsschutz erklärt' };
@@ -158,6 +159,10 @@ export default function ArbeitsschutzErklaertPage() {
           <SourceLink href="https://www.arbeitsschutz.nrw.de/" label={block.sourceLabel} />
         </section>
       ))}
+
+      <section className="content-section">
+        <HandsplusTeaser variant="arbeitsschutz" idSuffix="erklaert" />
+      </section>
 
       <section className="content-section">
         <h2>Weitere Themen</h2>

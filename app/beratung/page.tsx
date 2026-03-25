@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { HandsplusTeaser } from '@/components/HandsplusTeaser';
 import { SourceLink } from '@/components/SourceLink';
 
 export const metadata = { title: 'Beratung & Beschwerde' };
@@ -61,13 +62,30 @@ export default function BeratungPage() {
           (z. B. nach Bezirken oder Themen).
         </p>
         <p>
+          <strong>Servicehotline (Erstberatung):</strong>{' '}
+          <a href="tel:0234416927474">0234 41692 7474</a>
+          {' '}
+          (Montag bis Donnerstag 9:00–15:00 Uhr, Freitag 9:00–14:00 Uhr). Die
+          aktuellen Zeiten und Themen finden Sie auf der offiziellen Seite zur
+          telefonischen Erstberatung.
+        </p>
+        <p>
+          <a
+            href="https://www.arbeitsschutz.nrw.de/telefonische-erstberatung"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="external"
+          >
+            Telefonische Erstberatung – Informationen und Kontakt →
+          </a>
+          {' · '}
           <a
             href="https://www.arbeitsschutz.nrw.de/beratung-und-beschwerde/arbeitsschutzberatung"
             target="_blank"
             rel="noopener noreferrer"
             className="external"
           >
-            Arbeitsschutzberatung – Kontakt und Ansprechpartner →
+            Arbeitsschutzberatung – Übersicht →
           </a>
         </p>
         <SourceLink href="https://www.arbeitsschutz.nrw.de/" label="Arbeitsschutzverwaltung NRW" />
@@ -89,13 +107,21 @@ export default function BeratungPage() {
           der offiziellen Seite unter „Weitere Beratungsangebote“).
         </p>
         <p>
+          <strong>Arbeitsschutztelefon (Beschwerden):</strong>{' '}
+          <a href="tel:02118553311">0211 855 3311</a>
+          {' '}
+          (Montag bis Freitag 8:00–18:00 Uhr). Beschwerden können Sie auch über
+          das Online-Formular einreichen; beides ist nach Angaben der Behörde
+          anonym nutzbar.
+        </p>
+        <p>
           <a
             href="https://www.arbeitsschutz.nrw.de/beratung-beschwerde/arbeitsschutzbeschwerde"
             target="_blank"
             rel="noopener noreferrer"
             className="external"
           >
-            Arbeitsschutzbeschwerde (Online-Formular) →
+            Arbeitsschutzbeschwerde – Informationen und Online-Formular →
           </a>
         </p>
         <SourceLink href="https://www.arbeitsschutz.nrw.de/" label="Arbeitsschutzverwaltung NRW" />
@@ -110,13 +136,29 @@ export default function BeratungPage() {
           Gefährdungsbeurteilungen und Arbeitsschutzmaßnahmen sein.
         </p>
         <p>
+          <strong>MobbingLine NRW:</strong>{' '}
+          <a href="tel:02118371911">0211 837 1911</a>
+          {' '}
+          (Montag bis Donnerstag 16:00–20:00 Uhr) – vertrauliche Erstberatung für
+          Betroffene und Arbeitgeber.
+        </p>
+        <p>
+          <a
+            href="https://www.arbeitsschutz.nrw.de/beratung-beschwerde/arbeitsschutzberatung/mobbingline"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="external"
+          >
+            MobbingLine NRW – Informationen →
+          </a>
+          {' · '}
           <a
             href="https://www.arbeitsschutz.nrw.de/beratung-und-beschwerde/arbeitsschutzberatung"
             target="_blank"
             rel="noopener noreferrer"
             className="external"
           >
-            Mobbing – Beratung und Informationen →
+            Arbeitsschutzberatung – Übersicht →
           </a>
         </p>
         <SourceLink href="https://www.arbeitsschutz.nrw.de/" label="Arbeitsschutzverwaltung NRW" />
@@ -186,6 +228,10 @@ export default function BeratungPage() {
           </a>
         </p>
         <SourceLink href="https://www.arbeitsschutz.nrw.de/" label="Arbeitsschutzverwaltung NRW" />
+      </section>
+
+      <section className="content-section">
+        <HandsplusTeaser variant="general" idSuffix="beratung" />
       </section>
     </div>
   );

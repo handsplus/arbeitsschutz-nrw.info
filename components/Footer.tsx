@@ -41,6 +41,9 @@ export function Footer() {
         <div className="footer-pages">
           <p className="footer-title">Seiten</p>
           <ul>
+            <li><Link href="/arbeitsschutz-erklaert">Arbeitsschutz erklärt</Link></li>
+            <li><Link href="/fachthemen">Fachthemen</Link></li>
+            <li><Link href="/beratung">Beratung & Beschwerde</Link></li>
             <li><Link href="/beratung-handsplus">Beratung durch Health and Safety +</Link></li>
             <li><Link href="/faq">FAQ</Link></li>
             <li><Link href="/antraege-formulare">Anträge & Formulare</Link></li>

@@ -23,10 +23,18 @@ export default function GlobalError({
         <h1 style={{ fontSize: '1.5rem', color: '#003366', marginBottom: '1rem' }}>
           Anwendungsfehler
         </h1>
-        <p style={{ maxWidth: '50ch', lineHeight: 1.6, marginBottom: '1.5rem' }}>
-          Die Seite konnte nicht aufgebaut werden. Bitte den Entwicklungs-Server stoppen
-          (Strg+C), den Ordner <code>.next</code> löschen und <code>npm run dev</code>{' '}
-          neu starten – besonders bei Projekten in OneDrive.
+        <p style={{ maxWidth: '50ch', lineHeight: 1.6, marginBottom: '1rem' }}>
+          Die Seite konnte nicht aufgebaut werden. Bitte laden Sie die Startseite neu oder
+          versuchen Sie es später erneut.
+        </p>
+        <p style={{ maxWidth: '50ch', lineHeight: 1.6, marginBottom: '1.5rem', fontSize: '0.95rem', color: '#4a4a4a' }}>
+          Entwicklung: Bei anhaltenden Problemen Build-Cache löschen (Ordner{' '}
+          <code>.next</code> entfernen, dann <code>npm run dev</code>).
+        </p>
+        <p style={{ marginBottom: '1.5rem' }}>
+          <a href="/" style={{ color: '#003366', fontWeight: 600 }}>
+            Zur Startseite
+          </a>
         </p>
         <button
           type="button"

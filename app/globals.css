@@ -1009,6 +1009,121 @@ h3 { font-size: 1.125rem; }
   font-weight: 600;
 }
 
+/* Dezente H&S+-Teaser auf Themenseiten */
+.handsplus-teaser {
+  margin-top: 0;
+  border-left: 4px solid var(--color-primary);
+  padding: 1.25rem 1.35rem;
+  background: linear-gradient(135deg, #fafbfc 0%, #f0f4f8 100%);
+}
+
+.handsplus-teaser-kicker {
+  margin: 0 0 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.handsplus-teaser-title {
+  margin: 0 0 0.65rem;
+  font-size: 1.15rem;
+  border: none;
+  padding: 0;
+  color: var(--color-text);
+}
+
+.handsplus-teaser-body {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.55;
+  max-width: 62ch;
+}
+
+.handsplus-teaser-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  align-items: center;
+}
+
+.handsplus-teaser-btn {
+  font-size: 0.88rem;
+  padding: 0.5rem 0.95rem;
+}
+
+.handsplus-teaser-foot {
+  margin: 1rem 0 0;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.handsplus-teaser-foot a {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.handsplus-service-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 560px) {
+  .handsplus-service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .handsplus-service-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.handsplus-service-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.handsplus-service-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-sm);
+  text-decoration: none;
+}
+
+.handsplus-service-card h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+  color: var(--color-primary);
+}
+
+.handsplus-service-card p {
+  margin: 0 0 0.5rem;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  line-height: 1.45;
+  flex-grow: 1;
+}
+
+.handsplus-service-more {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-top: 0.25rem;
+}
+
 /* Banner H&S+ auf Startseite */
 .promo-banner {
   background: linear-gradient(

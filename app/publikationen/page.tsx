@@ -1,3 +1,4 @@
+import { HandsplusTeaser } from '@/components/HandsplusTeaser';
 import { SourceLink } from '@/components/SourceLink';
 
 export const metadata = { title: 'Publikationen' };
@@ -33,6 +34,10 @@ export default function PublikationenPage() {
           </a>
         </p>
         <SourceLink href="https://www.arbeitsschutz.nrw.de/" label="Arbeitsschutzverwaltung NRW" />
+      </section>
+
+      <section className="content-section">
+        <HandsplusTeaser variant="general" idSuffix="publikationen" />
       </section>
     </div>
   );

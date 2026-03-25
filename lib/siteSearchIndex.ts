@@ -152,6 +152,13 @@ export const siteSearchIndex: SiteSearchItem[] = [
       'sigeko',
       'brandschutz',
       'unternehmen',
+      'elektro',
+      'elektrosicherheit',
+      'schulung',
+      'schulungen',
+      'managementsystem',
+      'iso',
+      'iso45001',
     ],
   },
   {

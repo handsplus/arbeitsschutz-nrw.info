@@ -1,3 +1,4 @@
+import { HandsplusTeaser } from '@/components/HandsplusTeaser';
 import { SourceLink } from '@/components/SourceLink';
 
 export const metadata = { title: 'Anträge, Formulare & Hinweise' };
@@ -39,6 +40,10 @@ export default function AntraegeFormularePage() {
           </a>
         </p>
         <SourceLink href="https://www.arbeitsschutz.nrw.de/" label="Arbeitsschutzverwaltung NRW" />
+      </section>
+
+      <section className="content-section">
+        <HandsplusTeaser variant="arbeitsschutz" idSuffix="antraege" />
       </section>
     </div>
   );

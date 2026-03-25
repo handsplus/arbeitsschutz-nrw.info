@@ -1,3 +1,4 @@
+import { HandsplusTeaser } from '@/components/HandsplusTeaser';
 import { SourceLink } from '@/components/SourceLink';
 
 export const metadata = { title: 'Fachthemen von A–Z' };
@@ -198,6 +199,10 @@ export default function FachthemenPage() {
           </a>
         </p>
         <SourceLink href="https://www.dguv.de/" label="DGUV" />
+      </section>
+
+      <section className="content-section">
+        <HandsplusTeaser variant="schulungen" idSuffix="fachthemen" />
       </section>
     </div>
   );

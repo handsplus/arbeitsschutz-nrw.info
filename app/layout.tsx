@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: '%s | Arbeitsschutz NRW',
   },
   description:
-    'Orientierung zum Arbeitsschutz in Nordrhein-Westfalen – Verweise auf Arbeitsschutzverwaltung NRW, KomNet und DGUV. Privates Informationsportal von Health and Safety +, ohne eigene Fachaufarbeitung.',
+    'Orientierung zum Arbeitsschutz in Nordrhein-Westfalen – Verweise auf Arbeitsschutzverwaltung NRW, KomNet und DGUV. Privates Informationsportal von Health and Safety +, ohne eigene Fachbearbeitung.',
   keywords: 'Arbeitsschutz, NRW, Nordrhein-Westfalen, Sicherheit, Gesundheit, Arbeit, DGUV, Unfallversicherung, Health and Safety Plus',
   openGraph: {
     title: 'Arbeitsschutz NRW – Informationsportal',

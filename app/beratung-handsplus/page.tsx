@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { HandsplusServiceGrid } from '@/components/HandsplusServiceGrid';
 
 export const metadata: Metadata = { title: 'Beratung durch Health and Safety +' };
 
@@ -49,6 +50,18 @@ export default function BeratungHandsplusPage() {
             </a>
           </p>
         </div>
+      </section>
+
+      <section className="content-section">
+        <h2>Leistungen im Überblick</h2>
+        <p>
+          Entsprechend unserem Angebot auf{' '}
+          <a href="https://www.handsplus.de/leistungen" target="_blank" rel="noopener noreferrer">
+            handsplus.de
+          </a>{' '}
+          – hier die wichtigsten Bereiche mit direktem Link zu den Detailseiten:
+        </p>
+        <HandsplusServiceGrid />
       </section>
 
       <section className="content-section">

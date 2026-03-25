@@ -25,8 +25,8 @@ export default function QuellenPage() {
         <h1>Offizielle Quellen</h1>
         <p className="page-intro">
           Die Inhalte dieses Informationsportals beziehen sich auf die folgenden
-          offiziellen Websites. Für verbindliche Auskünfte, Anträge und
-          Beratung           wenden Sie sich bitte direkt an diese Stellen. Zu den Quellen zählen
+          offiziellen Websites.           Für verbindliche Auskünfte, Anträge und
+          Beratung wenden Sie sich bitte direkt an diese Stellen. Zu den Quellen zählen
           die Arbeitsschutzverwaltung NRW, KomNet und die Deutsche Gesetzliche
           Unfallversicherung (DGUV).
         </p>

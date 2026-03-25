@@ -1,3 +1,4 @@
+import { HandsplusTeaser } from '@/components/HandsplusTeaser';
 import { SourceLink } from '@/components/SourceLink';
 
 export const metadata = { title: 'Landesweite Überwachungsaktionen' };
@@ -57,6 +58,10 @@ export default function UeberwachungsaktionenPage() {
           ))}
         </ul>
         <SourceLink href="https://www.arbeitsschutz.nrw.de/arbeitsschutz-erklaert/landesweite-ueberwachungsaktionen" label="Arbeitsschutzverwaltung NRW – Landesweite Überwachungsaktionen" />
+      </section>
+
+      <section className="content-section">
+        <HandsplusTeaser variant="sigeko" idSuffix="ueberwachung" />
       </section>
     </div>
   );

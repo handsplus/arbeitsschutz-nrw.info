@@ -22,10 +22,10 @@ export function CookieBanner() {
   if (!visible) return null;
 
   return (
-    <div className="cookie-banner" role="dialog" aria-label="Cookie-Hinweis">
+    <div className="cookie-banner" role="dialog" aria-label="Hinweis zur lokalen Speicherung">
       <p className="cookie-banner-text">
-        Wir verwenden keine Analyse-Cookies. Für technisch notwendige Funktionen
-        und Ihre Einwilligung setzen wir Cookies ein.{' '}
+        Wir setzen keine Analyse-Cookies. Ihre Auswahl zu diesem Hinweis wird lokal
+        im Browser gespeichert (keine Werbe- oder Profilierung).{' '}
         <Link href="/datenschutz">Mehr in der Datenschutzerklärung</Link>.
       </p>
       <div className="cookie-banner-buttons">

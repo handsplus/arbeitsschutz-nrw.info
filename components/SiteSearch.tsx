@@ -124,6 +124,8 @@ export function SiteSearch() {
             id={inputId}
             type="search"
             name="q"
+            role="combobox"
+            aria-haspopup="listbox"
             className="site-search-input"
             placeholder="Begriff eingeben …"
             autoComplete="off"
