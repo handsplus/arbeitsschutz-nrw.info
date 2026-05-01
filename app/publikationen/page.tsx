@@ -1,7 +1,14 @@
 import { HandsplusTeaser } from '@/components/HandsplusTeaser';
 import { SourceLink } from '@/components/SourceLink';
+import { pageMetadata } from '@/lib/seo';
 
-export const metadata = { title: 'Publikationen' };
+export const metadata = pageMetadata({
+  path: '/publikationen',
+  title: 'Publikationen',
+  description:
+    'Hinweis auf Broschüren, Faltblätter, Plakate und Berichte der Arbeitsschutzverwaltung NRW – direkt zur offiziellen Publikationsübersicht.',
+  keywords: ['Publikationen Arbeitsschutz NRW', 'Broschüre Arbeitsschutz', 'Plakate Arbeitssicherheit'],
+});
 
 export default function PublikationenPage() {
   return (
@@ -10,8 +17,12 @@ export default function PublikationenPage() {
         <h1>Publikationen</h1>
         <p className="page-intro">
           Broschüren, Faltblätter, Plakate und Berichte der Arbeitsschutzverwaltung
-          Nordrhein-Westfalen. Alle aktuellen Publikationen werden auf der
-          offiziellen Website bereitgestellt.
+          Nordrhein-Westfalen. Die Liste wird auf der offiziellen Website fortlaufend
+          ergänzt; aktuelle Hinweise finden Sie auch unter{' '}
+          <a href="https://www.arbeitsschutz.nrw.de/aktuelles-presse" target="_blank" rel="noopener noreferrer">
+            Aktuelles &amp; Presse
+          </a>
+          .
         </p>
       </div>
 

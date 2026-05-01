@@ -1,6 +1,13 @@
 import type { Metadata } from 'next';
+import { pageMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = { title: 'Impressum' };
+export const metadata: Metadata = pageMetadata({
+  path: '/impressum',
+  title: 'Impressum',
+  description:
+    'Impressum und Anbieterkennzeichnung: Health and Safety +, Betreiber von arbeitsschutz-nrw.info – Kontakt und Hinweis zur Abgrenzung von Behördenangeboten.',
+  keywords: ['Impressum', 'Health and Safety Plus', 'arbeitsschutz-nrw.info Anbieter'],
+});
 
 export default function ImpressumPage() {
   return (

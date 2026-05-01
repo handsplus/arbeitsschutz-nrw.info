@@ -1,8 +1,15 @@
 import Link from 'next/link';
 import { HandsplusTeaser } from '@/components/HandsplusTeaser';
 import { SourceLink } from '@/components/SourceLink';
+import { pageMetadata } from '@/lib/seo';
 
-export const metadata = { title: 'Arbeitsschutz erklärt' };
+export const metadata = pageMetadata({
+  path: '/arbeitsschutz-erklaert',
+  title: 'Arbeitsschutz erklärt',
+  description:
+    'Grundlagen: Was ist Arbeitsschutz, Akteure in Deutschland, GDA, Arbeitsschutzverwaltung NRW, DGUV – mit Verweisen auf arbeitsschutz.nrw.de. Privates Orientierungsportal.',
+  keywords: ['Arbeitsschutz Grundlagen', 'GDA', 'Arbeitsschutzverwaltung NRW', 'DGUV', 'ArbSchG'],
+});
 
 const blocks = [
   {

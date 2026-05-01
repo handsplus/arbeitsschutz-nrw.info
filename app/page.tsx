@@ -1,7 +1,14 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
+import { HomeItemListJsonLd } from '@/components/HomeItemListJsonLd';
 import { SiteSearchSkeleton } from '@/components/SiteSearchSkeleton';
 import { SourceLink } from '@/components/SourceLink';
+import { homeMetadata } from '@/lib/seo';
+
+export const metadata: Metadata = homeMetadata(
+  'Orientierung zum Arbeitsschutz in Nordrhein-Westfalen: Schnellzugriff, aktuelle Meldungen und Verweise zu Arbeitsschutzverwaltung NRW, LfGA, KomNet und DGUV. Privates Informationsportal von Health and Safety + – keine Behörde.'
+);
 
 const SiteSearch = dynamic(
   () => import('@/components/SiteSearch').then((m) => ({ default: m.SiteSearch })),
@@ -61,33 +68,39 @@ function IconPhone({ className }: { className?: string }) {
 
 const aktuelles = [
   {
-    title: 'Kontrollaktion Paketbranche: Teils gravierende Mängel im Arbeitsschutz',
-    text: 'Von Mai bis August 2025 führte die Arbeitsschutzverwaltung eine landesweite Kontrollaktion in der Kurier-, Express- und Paketbranche (KEP) durch. Bei 57 Subunternehmen und 225 befragten Zustellerinnen und Zustellern wurden zum Teil gravierende Mängel festgestellt.',
-    url: 'https://mags.nrw/kontrollaktion-der-paketbranche-teils-gravierende-maengel-im-arbeitsschutz',
+    title: 'NRW: Bundesratsinitiative zum Abbau unnötiger Bürokratie im Arbeitsschutz',
+    text: 'Das Land Nordrhein-Westfalen hat eine Initiative in den Bundesrat eingebracht, die u. a. Änderungen bei Arbeitsschutzausschüssen, Aufzugsprüfungen und digitaler Dokumentation vorsieht. Hintergrund ist die Entlastung von Verwaltung und Wirtschaft bei gleichzeitigem Fokus auf den Schutz der Beschäftigten.',
+    url: 'https://www.land.nrw/pressemitteilung/nordrhein-westfalen-startet-bundesratsinitiative-fuer-den-abbau-von-unnoetiger',
     date: '2025',
   },
   {
-    title: '16. Deutscher Gefahrstoffschutzpreis 2026',
-    text: 'Das BMAS verleiht 2026 zum 16. Mal den Deutschen Gefahrstoffschutzpreis (10.000 €). Motto: „Sicher. Besser. Arbeiten.“ Bewerbungen bis 30. April 2026.',
+    title: 'Kontrollaktion Paketbranche: Teils gravierende Mängel im Arbeitsschutz',
+    text: 'Von Mai bis August 2025 führte die Arbeitsschutzverwaltung eine landesweite Kontrollaktion in der Kurier-, Express- und Paketbranche (KEP) durch. Dabei wurden u. a. 57 Subunternehmen kontrolliert und 225 Zustellerinnen und Zusteller befragt; es wurden zum Teil gravierende Mängel festgestellt.',
+    url: 'https://www.arbeitsschutz.nrw.de/kontrollaktion-der-paketbranche-teils-gravierende-maengel-im-arbeitsschutz',
+    date: '2025',
+  },
+  {
+    title: '16. Deutscher Gefahrstoffschutzpreis',
+    text: 'Das BMAS zeichnet 2026 vorbildliche Aktivitäten zum Schutz vor Gefahrstoffen aus (10.000 Euro, Motto „Sicher. Besser. Arbeiten.“). Nach Angaben der BAuA endete die Bewerbungsfrist am 30. April 2026; die Preisverleihung ist für den 30. September 2026 vorgesehen.',
     url: 'https://www.baua.de/DE/Themen/Chemikalien-Biostoffe/Gefahrstoffe/Gefahrstoffschutzpreis/Gefahrstoffschutzpreis',
     date: '2026',
   },
   {
-    title: 'Praxishilfen Lungenkrebs-Früherkennung (LuKrFrühErkV)',
-    text: 'Aktualisierte Handreichung und neues Musterformular für Anträge zur Genehmigung von Röntgeneinrichtungen zur Früherkennung von Lungenkrebs bei rauchenden Personen.',
-    url: 'https://www.arbeitsschutz.nrw.de/genehmigungsantrag-fuer-den-betrieb-einer-roentgeneinrichtung-zur-frueherkennung-von-lungenkrebs',
+    title: 'Lungenscreening / Lungenkrebs-Früherkennung in NRW',
+    text: 'Einführung des Lungenscreenings für stärker rauchende Personen im Alter von 50 bis 75 Jahren: Die Arbeitsschutzverwaltung informiert über Genehmigungsanträge für medizinische Einrichtungen und verweist auf Antragsunterlagen und Zuständigkeiten beim LfGA NRW.',
+    url: 'https://www.arbeitsschutz.nrw.de/antraege-zur-genehmigung-von-lungenscreening-koennen-gestellt-werden',
     date: '2025',
   },
   {
     title: 'GDA-Befragung: Fortschritte beim Arbeitsschutz',
-    text: 'Die aktuelle Betriebs- und Beschäftigtenbefragung der Gemeinsamen Deutschen Arbeitsschutzstrategie (GDA) zeigt: Der systematische Schutz von Sicherheit und Gesundheit hat in den vergangenen zehn Jahren deutliche Fortschritte gemacht.',
+    text: 'Die Betriebs- und Beschäftigtenbefragung der Gemeinsamen Deutschen Arbeitsschutzstrategie (GDA) liefert Daten dazu, wie sich Sicherheit und Gesundheit bei der Arbeit in den zurückliegenden Jahren entwickelt haben.',
     url: 'https://www.gda-portal.de/SharedDocs/Meldungen/DE/25-06-24-Betriebs-und-Beschaeftigtenbefragung',
     date: '2025',
   },
   {
-    title: 'DGUV warnt vor Betrugsversuch und gefälschten Schreiben',
-    text: 'Viele Betriebe haben Schreiben mit gefälschtem Absender einer Berufsgenossenschaft, Unfallkasse oder der DGUV erhalten (z. B. Vertrieb Präventionsmodul, Datenüberprüfung). Die DGUV informiert über den Betrugsversuch und wie Sie echte Schreiben erkennen.',
-    url: 'https://www.dguv.de/de/presse/pressemitteilungen/2025/index.jsp',
+    title: 'DGUV: Hinweise zu Betrugsversuchen und gefälschten Schreiben',
+    text: 'Die DGUV und die Unfallversicherungsträger weisen wiederholt auf gefälschte Schreiben hin (z. B. angebliche „Präventionsmodule“ oder Datenabfragen). Auf der Presse-Übersicht der DGUV finden Sie aktuelle Warnhinweise und Orientierung.',
+    url: 'https://www.dguv.de/de/presse/index.jsp',
     date: '2025',
   },
 ];
@@ -190,7 +203,7 @@ const services = [
   },
   {
     title: 'Offizielle Quellen',
-    text: 'Direkte Links zu den offiziellen Websites der Arbeitsschutzverwaltung NRW, KomNet und der Deutschen Gesetzlichen Unfallversicherung (DGUV).',
+    text: 'Direkte Links zur Arbeitsschutzverwaltung NRW (inkl. Aktuelles & Presse), zum LfGA NRW, zu KomNet und zur DGUV.',
     href: '/quellen',
     source: null,
     sourceLabel: null,
@@ -200,7 +213,9 @@ const services = [
 
 export default function HomePage() {
   return (
-    <div className="container">
+    <>
+      <HomeItemListJsonLd />
+      <div className="container">
       <div className="page-head page-head-with-search">
         <div className="page-head-main">
           <h1>Arbeitsschutz in Nordrhein-Westfalen</h1>
@@ -293,7 +308,11 @@ export default function HomePage() {
       <section className="content-section">
         <h2>Aktuelles aus Arbeitsschutz, GDA und DGUV</h2>
         <p className="section-lead">
-          Meldungen von Arbeitsschutzverwaltung NRW, Ministerium, Gemeinsamer Deutscher Arbeitsschutzstrategie (GDA) und Deutscher Gesetzlicher Unfallversicherung (DGUV). Details und weitere News auf den verlinkten offiziellen Seiten.
+          Auswahl aktueller Meldungen von Land NRW, Arbeitsschutzverwaltung NRW, BAuA/BMAS, GDA und DGUV. Eine laufend aktualisierte Übersicht der Arbeitsschutzverwaltung:{' '}
+          <a href="https://www.arbeitsschutz.nrw.de/aktuelles-presse" target="_blank" rel="noopener noreferrer">
+            Aktuelles &amp; Presse auf arbeitsschutz.nrw.de
+          </a>
+          .
         </p>
         <ul className="news-list">
           {aktuelles.map((item) => (
@@ -340,5 +359,6 @@ export default function HomePage() {
         </div>
       </section>
     </div>
+    </>
   );
 }

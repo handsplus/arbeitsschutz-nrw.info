@@ -3,22 +3,53 @@ import './globals.css';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { CookieBanner } from '@/components/CookieBanner';
+import { SiteStructuredData } from '@/components/SiteStructuredData';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Arbeitsschutz NRW – Informationsportal',
+    default: 'Arbeitsschutz NRW – Informationsportal (Links & Orientierung)',
     template: '%s | Arbeitsschutz NRW',
   },
   description:
-    'Orientierung zum Arbeitsschutz in Nordrhein-Westfalen – Verweise auf Arbeitsschutzverwaltung NRW, KomNet und DGUV. Privates Informationsportal von Health and Safety +, ohne eigene Fachbearbeitung.',
-  keywords: 'Arbeitsschutz, NRW, Nordrhein-Westfalen, Sicherheit, Gesundheit, Arbeit, DGUV, Unfallversicherung, Health and Safety Plus',
+    'Orientierung zum Arbeitsschutz in Nordrhein-Westfalen: Verweise auf Arbeitsschutzverwaltung NRW, LfGA, KomNet und DGUV. Privates Informationsportal von Health and Safety + – keine Behörde, keine Fachbearbeitung von Einzelfällen.',
+  keywords: [
+    'Arbeitsschutz NRW',
+    'Arbeitsschutz Nordrhein-Westfalen',
+    'Arbeitsschutzverwaltung NRW Links',
+    'KomNet NRW',
+    'LfGA NRW',
+    'DGUV Infoline',
+    'Arbeitsschutz Beschwerde NRW',
+    'SiGeKo NRW',
+    'Health and Safety Plus',
+    'handsplus',
+  ],
+  authors: [{ name: 'Health and Safety +', url: 'https://www.handsplus.de/' }],
+  creator: 'Health and Safety +',
+  publisher: 'Health and Safety +',
+  formatDetection: { telephone: false },
   openGraph: {
+    type: 'website',
+    locale: 'de_DE',
+    url: 'https://arbeitsschutz-nrw.info',
+    siteName: 'Arbeitsschutz NRW – Informationsportal',
     title: 'Arbeitsschutz NRW – Informationsportal',
     description:
-      'Privates Informationsportal: Verweise zum Arbeitsschutz in NRW (Arbeitsschutzverwaltung NRW, KomNet, DGUV). Ein Angebot von Health and Safety +.',
+      'Privates Informationsportal mit Verweisen zum Arbeitsschutz in NRW (ASV, LfGA, KomNet, DGUV). Betreiber: Health and Safety +.',
+    images: [{ url: '/icon.png', width: 512, height: 512, alt: 'Arbeitsschutz NRW Informationsportal' }],
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Arbeitsschutz NRW – Informationsportal',
+    description:
+      'Orientierung & Links zu Arbeitsschutz NRW, KomNet, DGUV. Privates Angebot von Health and Safety +.',
   },
   metadataBase: new URL('https://arbeitsschutz-nrw.info'),
-  robots: 'index, follow',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
 };
 
 export default function RootLayout({
@@ -29,6 +60,9 @@ export default function RootLayout({
   return (
     <html lang="de">
       <head>
+        <link rel="alternate" type="text/plain" href="/llms.txt" title="KI- und Tool-Hinweise (llms.txt)" />
+        <link rel="author" href="/humans.txt" type="text/plain" />
+        <SiteStructuredData />
         <style dangerouslySetInnerHTML={{ __html: `
           :root{--color-bg:#f5f6f8;--color-surface:#fff;--color-primary:#003366;--color-text:#1a1a1a;--color-border:#dde1e6;--font-sans:'Segoe UI',system-ui,sans-serif;--radius:8px;--max-width:1200px}
           *,.main-content{box-sizing:border-box}

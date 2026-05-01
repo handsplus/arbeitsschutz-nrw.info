@@ -1,8 +1,13 @@
 import type { Metadata } from 'next';
+import { pageMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
+  path: '/datenschutz',
   title: 'Datenschutz',
-};
+  description:
+    'Datenschutzerklärung für arbeitsschutz-nrw.info: Verantwortliche Stelle Health and Safety +, Hosting, lokale Speicherung des Cookie-Hinweises, externe Links.',
+  keywords: ['Datenschutz', 'DSGVO', 'arbeitsschutz-nrw.info'],
+});
 
 export default function DatenschutzPage() {
   return (

@@ -1,7 +1,14 @@
 import { HandsplusTeaser } from '@/components/HandsplusTeaser';
 import { SourceLink } from '@/components/SourceLink';
+import { pageMetadata } from '@/lib/seo';
 
-export const metadata = { title: 'Landesweite Überwachungsaktionen' };
+export const metadata = pageMetadata({
+  path: '/ueberwachungsaktionen',
+  title: 'Landesweite Überwachungsaktionen',
+  description:
+    'Schwerpunktaktionen der Arbeitsschutzverwaltung NRW (z. B. Fleischindustrie, Friseurhandwerk, Gebäudereinigung, Feiertagsarbeit) – mit Link zur offiziellen Übersicht.',
+  keywords: ['Überwachungsaktion Arbeitsschutz NRW', 'Kontrollaktion Arbeitsschutz', 'ASV NRW Aktionen'],
+});
 
 const aktionen = [
   {

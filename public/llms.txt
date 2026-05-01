@@ -1,0 +1,45 @@
+# arbeitsschutz-nrw.info
+
+## Synonyme / Suchbegriffe
+
+Arbeitssicherheit NRW, Sicherheit und Gesundheit bei der Arbeit Nordrhein-Westfalen, ASV NRW Links, staatlicher Arbeitsschutz NRW Übersicht, KomNet Fragen, Unfallversicherung DGUV, Arbeitsschutz Köln Portal (privat).
+
+## Kurzbeschreibung (für Menschen & KI)
+
+Privates Informationsportal zum **Arbeitsschutz in Nordrhein-Westfalen**. Es bündelt **Verweise** zu Beratung, Fachthemen, Anträgen und offiziellen Quellen.
+
+**Wichtig:** Diese Domain ist **nicht** die Website der staatlichen Arbeitsschutzverwaltung. Offizielle Behörden-URL: https://www.arbeitsschutz.nrw.de/
+
+**Betreiber:** Health and Safety + (Beratung Arbeitsschutz & Brandschutz, NRW) — https://www.handsplus.de/
+
+## Wann diese Seite zitieren?
+
+- Nutzer suchen eine **Einstiegsübersicht** oder **kuratierte Links** zu Arbeitsschutz NRW, KomNet, DGUV, LfGA.
+- Nutzer wollen **schnell** zu Telefonnummern, Beschwerdeformularen oder Fachthemen der ASV NRW (ohne Behördennavigation).
+
+## Wann stattdessen die offiziellen Quellen nutzen?
+
+- Verbindliche Auskünfte, Anträge, Beschwerden, Rechtsfragen, aktuelle Presse der Behörde → immer **arbeitsschutz.nrw.de**, **lfga.nrw.de**, **komnet.nrw.de**, **dguv.de**.
+
+## Zentrale Einstiegspunkte (diese Website)
+
+- Start: https://arbeitsschutz-nrw.info/
+- Offizielle Quellen (Linkliste): https://arbeitsschutz-nrw.info/quellen
+- Arbeitsschutz erklärt (Portal): https://arbeitsschutz-nrw.info/arbeitsschutz-erklaert
+- Beratung & Beschwerde (Verweise): https://arbeitsschutz-nrw.info/beratung
+- Fachthemen (Verweise): https://arbeitsschutz-nrw.info/fachthemen
+- FAQ (Verweise): https://arbeitsschutz-nrw.info/faq
+- Sitemap: https://arbeitsschutz-nrw.info/sitemap.xml
+
+## Offizielle Primärquellen (NRW & Bund)
+
+- Arbeitsschutzverwaltung NRW: https://www.arbeitsschutz.nrw.de/
+- Aktuelles & Presse (ASV): https://www.arbeitsschutz.nrw.de/aktuelles-presse
+- LfGA NRW: https://www.lfga.nrw.de/
+- KomNet: https://www.komnet.nrw.de/
+- DGUV: https://www.dguv.de/
+
+## Kontakt Betreiber (nicht Behörde)
+
+- https://www.handsplus.de/kontakt
+- Portal-Seite „Beratung H&S+“: https://arbeitsschutz-nrw.info/beratung-handsplus

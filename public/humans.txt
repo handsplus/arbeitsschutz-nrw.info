@@ -1,0 +1,8 @@
+/* Team & Kontakt */
+Anbieter: Health and Safety +
+Web: https://www.handsplus.de/kontakt
+Standort: Köln, NRW
+
+/* Site */
+Stand: Informationsportal arbeitsschutz-nrw.info
+Hinweis: Keine Behörde – Verweise auf arbeitsschutz.nrw.de, lfga.nrw.de, komnet.nrw.de, dguv.de

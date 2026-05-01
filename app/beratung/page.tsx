@@ -1,8 +1,21 @@
 import Link from 'next/link';
 import { HandsplusTeaser } from '@/components/HandsplusTeaser';
 import { SourceLink } from '@/components/SourceLink';
+import { pageMetadata } from '@/lib/seo';
 
-export const metadata = { title: 'Beratung & Beschwerde' };
+export const metadata = pageMetadata({
+  path: '/beratung',
+  title: 'Beratung & Beschwerde',
+  description:
+    'Telefonische Erstberatung und Beschwerde Arbeitsschutz NRW, KomNet, DGUV-Infoline, MobbingLine, gefährliche Produkte melden – Links und Nummern mit Verweis auf arbeitsschutz.nrw.de.',
+  keywords: [
+    'Arbeitsschutz Beratung NRW',
+    'Arbeitsschutzbeschwerde',
+    'Erstberatung Arbeitsschutz',
+    'KomNet NRW',
+    'DGUV Infoline',
+  ],
+});
 
 export default function BeratungPage() {
   return (
@@ -176,6 +189,15 @@ export default function BeratungPage() {
         <p>
           <a href="https://www.komnet.nrw.de/" target="_blank" rel="noopener noreferrer" className="external">
             KomNet – Gut beraten. Gesund arbeiten. →
+          </a>
+          {' · '}
+          <a
+            href="https://www.arbeitsschutz.nrw.de/beratung-und-beschwerde/arbeitsschutzberatung/komnet"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="external"
+          >
+            KomNet auf arbeitsschutz.nrw.de →
           </a>
         </p>
         <SourceLink href="https://www.komnet.nrw.de/" label="KomNet NRW" />

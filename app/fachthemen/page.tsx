@@ -1,7 +1,20 @@
 import { HandsplusTeaser } from '@/components/HandsplusTeaser';
 import { SourceLink } from '@/components/SourceLink';
+import { pageMetadata } from '@/lib/seo';
 
-export const metadata = { title: 'Fachthemen von A–Z' };
+export const metadata = pageMetadata({
+  path: '/fachthemen',
+  title: 'Fachthemen von A–Z',
+  description:
+    'Themenbereiche vom Arbeitsschutz in NRW: Arbeitszeit, Gefahrstoffe, Baustellen, Mutterschutz, KomNet und DGUV – Verweise auf die offiziellen Fachthemen der Arbeitsschutzverwaltung NRW.',
+  keywords: [
+    'Fachthemen Arbeitsschutz',
+    'Arbeitsschutz NRW Themen',
+    'KomNet',
+    'Gefährdungsbeurteilung',
+    'Baustelle Arbeitsschutz',
+  ],
+});
 
 const kategorien = [
   {

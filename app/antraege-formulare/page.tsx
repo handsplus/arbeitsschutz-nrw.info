@@ -1,7 +1,14 @@
 import { HandsplusTeaser } from '@/components/HandsplusTeaser';
 import { SourceLink } from '@/components/SourceLink';
+import { pageMetadata } from '@/lib/seo';
 
-export const metadata = { title: 'Anträge, Formulare & Hinweise' };
+export const metadata = pageMetadata({
+  path: '/antraege-formulare',
+  title: 'Anträge, Formulare & Hinweise',
+  description:
+    'Übersicht und Link zum Bereich Anträge, Formulare und Hinweise der Arbeitsschutzverwaltung Nordrhein-Westfalen (Genehmigungen, Anzeigen, Strahlenschutz u. a.).',
+  keywords: ['Anträge Arbeitsschutz NRW', 'Formulare ASV NRW', 'Genehmigung Arbeitsschutz', 'LfGA NRW'],
+});
 
 export default function AntraegeFormularePage() {
   return (

@@ -1,7 +1,20 @@
 import type { Metadata } from 'next';
 import { HandsplusServiceGrid } from '@/components/HandsplusServiceGrid';
+import { pageMetadata } from '@/lib/seo';
 
-export const metadata: Metadata = { title: 'Beratung durch Health and Safety +' };
+export const metadata: Metadata = pageMetadata({
+  path: '/beratung-handsplus',
+  title: 'Beratung durch Health and Safety +',
+  description:
+    'Betriebliche Beratung: Arbeitsschutz, Brandschutz, SiGeKo, Elektrosicherheit, Schulungen und Managementsysteme in NRW – Erstberatung und Leistungen von handsplus.de.',
+  keywords: [
+    'Health and Safety Plus',
+    'handsplus',
+    'Arbeitsschutz Beratung NRW',
+    'Brandschutz Köln',
+    'SiGeKo Beratung',
+  ],
+});
 
 export default function BeratungHandsplusPage() {
   return (
