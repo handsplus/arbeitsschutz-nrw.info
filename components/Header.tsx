@@ -4,6 +4,7 @@ import { HeaderNavClient } from '@/components/HeaderNavClient';
 const navItems = [
   { href: '/', label: 'Start' },
   { href: '/arbeitsschutz-erklaert', label: 'Arbeitsschutz erklärt' },
+  { href: '/arbeitsschutzgesetz', label: 'ArbSchG & Pflichten' },
   { href: '/fachthemen', label: 'Fachthemen' },
   { href: '/beratung', label: 'Beratung & Beschwerde' },
   { href: '/beratung-handsplus', label: 'Beratung durch Health and Safety +' },

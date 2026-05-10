@@ -7,8 +7,17 @@ export const metadata = pageMetadata({
   path: '/arbeitsschutz-erklaert',
   title: 'Arbeitsschutz erklärt',
   description:
-    'Grundlagen: Was ist Arbeitsschutz, Akteure in Deutschland, GDA, Arbeitsschutzverwaltung NRW, DGUV – mit Verweisen auf arbeitsschutz.nrw.de. Privates Orientierungsportal.',
-  keywords: ['Arbeitsschutz Grundlagen', 'GDA', 'Arbeitsschutzverwaltung NRW', 'DGUV', 'ArbSchG'],
+    'Arbeitsschutz NRW: Arbeitsschutzgesetz (ArbSchG), Akteure, GDA und Arbeitsschutzverwaltung – Kurzüberblick mit Link zur Original-Seite arbeitsschutz.nrw.de.',
+  keywords: [
+    'Arbeitsschutz NRW',
+    'Arbeitsschutzgesetz',
+    'ArbSchG',
+    'Arbeitsschutz Grundlagen',
+    'GDA',
+    'Arbeitsschutzverwaltung NRW',
+    'DGUV',
+    'Gefährdungsbeurteilung',
+  ],
 });
 
 const blocks = [
@@ -174,6 +183,10 @@ export default function ArbeitsschutzErklaertPage() {
       <section className="content-section">
         <h2>Weitere Themen</h2>
         <ul>
+          <li>
+            <Link href="/arbeitsschutzgesetz">Arbeitsschutzgesetz (ArbSchG) & Pflichten</Link> – Gesetzestext
+            und offizielle Einstiege
+          </li>
           <li><Link href="/faq">FAQ Arbeitsschutz</Link> – häufige Fragen und Antworten</li>
           <li><Link href="/beratung">Beratung & Beschwerde</Link> – Ansprechstellen und Kontakt</li>
           <li><a href="https://www.dguv.de/de/versicherung/index.jsp" target="_blank" rel="noopener noreferrer">Versicherungsschutz, Arbeitsunfälle, Berufskrankheiten (DGUV)</a></li>

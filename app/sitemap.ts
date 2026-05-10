@@ -11,6 +11,7 @@ type Entry = {
 const entries: Entry[] = [
   { path: '/', changeFrequency: 'weekly', priority: 1 },
   { path: '/arbeitsschutz-erklaert', changeFrequency: 'monthly', priority: 0.9 },
+  { path: '/arbeitsschutzgesetz', changeFrequency: 'monthly', priority: 0.9 },
   { path: '/fachthemen', changeFrequency: 'monthly', priority: 0.9 },
   { path: '/beratung', changeFrequency: 'monthly', priority: 0.9 },
   { path: '/quellen', changeFrequency: 'monthly', priority: 0.9 },

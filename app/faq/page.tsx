@@ -8,13 +8,17 @@ export const metadata = pageMetadata({
   path: '/faq',
   title: 'FAQ Arbeitsschutz',
   description:
-    'Kurzantworten zu Arbeitsschutz, Unterweisung, Beschwerde, Unfall, DGUV und Gefährdungsbeurteilung in NRW – mit Link zum offiziellen FAQ der Arbeitsschutzverwaltung NRW. Privates Informationsportal.',
+    'Arbeitsschutz NRW: FAQ zu ArbSchG, Unterweisung, Beschwerde, Unfall, DGUV und Gefährdungsbeurteilung – mit Link zum offiziellen FAQ der Arbeitsschutzverwaltung NRW.',
   keywords: [
+    'Arbeitsschutz NRW',
     'FAQ Arbeitsschutz',
+    'Arbeitsschutzgesetz',
+    'ArbSchG',
     'Arbeitsschutz Fragen',
     'Unterweisung Arbeitsschutz',
     'Arbeitsschutzbeschwerde NRW',
     'Arbeitsunfall was tun',
+    'Gefährdungsbeurteilung',
   ],
 });
 

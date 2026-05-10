@@ -16,7 +16,7 @@ const graph = [
     name: 'Arbeitsschutz NRW – Informationsportal',
     alternateName: ['arbeitsschutz-nrw.info', 'Arbeitsschutz Nordrhein-Westfalen Portal'],
     description:
-      'Privates Informationsportal: Orientierung und Verweise zum Arbeitsschutz in NRW (Arbeitsschutzverwaltung NRW, LfGA, KomNet, DGUV). Keine Behörde.',
+      'Arbeitsschutz NRW: Orientierung zu ArbSchG, Gefährdungsbeurteilung, Unterweisung und offiziellen Stellen (Arbeitsschutzverwaltung NRW, LfGA, KomNet, DGUV).',
     inLanguage: 'de-DE',
     publisher: { '@id': PUBLISHER_ID },
   },

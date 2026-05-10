@@ -69,11 +69,17 @@ export function homeMetadata(description: string): Metadata {
     },
     keywords: [
       'Arbeitsschutz NRW',
+      'Arbeitsschutzgesetz',
+      'ArbSchG',
+      'Gefährdungsbeurteilung',
+      'Unterweisung',
+      'Arbeitssicherheit',
       'Arbeitsschutz Nordrhein-Westfalen',
       'Arbeitsschutzverwaltung NRW',
       'KomNet',
       'LfGA NRW',
       'DGUV',
+      'Fachkraft für Arbeitssicherheit',
       'Informationsportal Arbeitsschutz',
     ],
   };

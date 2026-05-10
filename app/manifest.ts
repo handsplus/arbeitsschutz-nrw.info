@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: 'Arbeitsschutz NRW – Informationsportal',
     short_name: 'Arbeitsschutz NRW',
     description:
-      'Privates Informationsportal: Verweise zu Arbeitsschutz NRW, LfGA, KomNet und DGUV. Betreiber: Health and Safety +.',
+      'Arbeitsschutz NRW: ArbSchG, Gefährdungsbeurteilung, Unterweisung – Verweise zu ASV NRW, LfGA, KomNet, DGUV.',
     start_url: '/',
     display: 'browser',
     background_color: '#f5f6f8',

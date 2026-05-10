@@ -11,9 +11,13 @@ export const metadata: Metadata = {
     template: '%s | Arbeitsschutz NRW',
   },
   description:
-    'Orientierung zum Arbeitsschutz in Nordrhein-Westfalen: Verweise auf Arbeitsschutzverwaltung NRW, LfGA, KomNet und DGUV. Privates Informationsportal von Health and Safety + – keine Behörde, keine Fachbearbeitung von Einzelfällen.',
+    'Arbeitsschutz NRW: ArbSchG, Gefährdungsbeurteilung, Unterweisung – Verweise zu ASV NRW, LfGA, KomNet, DGUV.',
   keywords: [
     'Arbeitsschutz NRW',
+    'Arbeitsschutzgesetz',
+    'ArbSchG',
+    'Gefährdungsbeurteilung',
+    'Unterweisung Arbeitssicherheit',
     'Arbeitsschutz Nordrhein-Westfalen',
     'Arbeitsschutzverwaltung NRW Links',
     'KomNet NRW',
@@ -21,6 +25,7 @@ export const metadata: Metadata = {
     'DGUV Infoline',
     'Arbeitsschutz Beschwerde NRW',
     'SiGeKo NRW',
+    'Fachkraft für Arbeitssicherheit',
     'Health and Safety Plus',
     'handsplus',
   ],
@@ -35,14 +40,14 @@ export const metadata: Metadata = {
     siteName: 'Arbeitsschutz NRW – Informationsportal',
     title: 'Arbeitsschutz NRW – Informationsportal',
     description:
-      'Privates Informationsportal mit Verweisen zum Arbeitsschutz in NRW (ASV, LfGA, KomNet, DGUV). Betreiber: Health and Safety +.',
+      'Arbeitsschutz NRW: ArbSchG, Gefährdungsbeurteilung, Unterweisung – ASV, LfGA, KomNet, DGUV.',
     images: [{ url: '/icon.png', width: 512, height: 512, alt: 'Arbeitsschutz NRW Informationsportal' }],
   },
   twitter: {
     card: 'summary',
     title: 'Arbeitsschutz NRW – Informationsportal',
     description:
-      'Orientierung & Links zu Arbeitsschutz NRW, KomNet, DGUV. Privates Angebot von Health and Safety +.',
+      'Arbeitsschutz NRW: ArbSchG, Gefährdungsbeurteilung, Unterweisung – ASV, LfGA, KomNet, DGUV.',
   },
   metadataBase: new URL('https://arbeitsschutz-nrw.info'),
   robots: {

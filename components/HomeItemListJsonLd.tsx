@@ -2,6 +2,11 @@ import { SITE_URL } from '@/lib/seo';
 
 const items = [
   { name: 'Arbeitsschutz erklärt', url: `${SITE_URL}/arbeitsschutz-erklaert`, desc: 'Grundlagen, Akteure, GDA' },
+  {
+    name: 'Arbeitsschutzgesetz (ArbSchG) & Pflichten',
+    url: `${SITE_URL}/arbeitsschutzgesetz`,
+    desc: 'Gesetzestext und ASV NRW',
+  },
   { name: 'Fachthemen A–Z', url: `${SITE_URL}/fachthemen`, desc: 'Themen und Verweise' },
   { name: 'Beratung & Beschwerde', url: `${SITE_URL}/beratung`, desc: 'Hotlines, Formulare, KomNet' },
   { name: 'Anträge & Formulare', url: `${SITE_URL}/antraege-formulare`, desc: 'ASV NRW' },

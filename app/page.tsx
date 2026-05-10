@@ -7,7 +7,7 @@ import { SourceLink } from '@/components/SourceLink';
 import { homeMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = homeMetadata(
-  'Orientierung zum Arbeitsschutz in Nordrhein-Westfalen: Schnellzugriff, aktuelle Meldungen und Verweise zu Arbeitsschutzverwaltung NRW, LfGA, KomNet und DGUV. Privates Informationsportal von Health and Safety + – keine Behörde.'
+  'Arbeitsschutz NRW: ArbSchG, Gefährdungsbeurteilung, Unterweisung – ASV NRW, LfGA, KomNet, DGUV.'
 );
 
 const SiteSearch = dynamic(
@@ -115,10 +115,18 @@ const schnellzugriff = [
 const services = [
   {
     title: 'Arbeitsschutz erklärt',
-    text: 'Wie funktioniert der Arbeitsschutz in Deutschland? Welche Aufgaben hat die Arbeitsschutzverwaltung NRW? Was ist die GDA? Übersicht zu Akteuren, Gesetzen und Landesweiten Überwachungsaktionen.',
+    text: 'Arbeitsschutzgesetz (ArbSchG), Pflichten im Betrieb, Akteure in Deutschland: Welche Aufgaben hat die Arbeitsschutzverwaltung NRW? Was ist die GDA? Übersicht mit Verweis auf die offizielle Seite arbeitsschutz.nrw.de.',
     href: '/arbeitsschutz-erklaert',
     source: 'https://www.arbeitsschutz.nrw.de/',
     sourceLabel: 'Arbeitsschutzverwaltung NRW',
+    internal: true,
+  },
+  {
+    title: 'Arbeitsschutzgesetz & Pflichten',
+    text: 'ArbSchG (Bundesrecht), Arbeitgeberpflichten, Gefährdungsbeurteilung und Unterweisung: Kurz erklärt mit direktem Link zum Gesetzestext (Gesetz im Internet) und zur Arbeitsschutzverwaltung NRW.',
+    href: '/arbeitsschutzgesetz',
+    source: 'https://www.gesetze-im-internet.de/arbschg/',
+    sourceLabel: 'Gesetz im Internet (BMJ)',
     internal: true,
   },
   {
@@ -218,10 +226,11 @@ export default function HomePage() {
       <div className="container">
       <div className="page-head page-head-with-search">
         <div className="page-head-main">
-          <h1>Arbeitsschutz in Nordrhein-Westfalen</h1>
+          <h1>Arbeitsschutz NRW – Orientierung und offizielle Links</h1>
           <p className="page-intro lead">
-            Dieses Portal hilft beim Einstieg zum Thema Arbeitsschutz in NRW: Es verweist
-            auf die offiziellen Angebote der{' '}
+            Dieses Portal hilft beim Einstieg zum Thema Arbeitsschutz in NRW – etwa
+            Arbeitsschutzgesetz (ArbSchG), Gefährdungsbeurteilung und Unterweisung – und
+            verweist auf die offiziellen Angebote der{' '}
             <a href="https://www.arbeitsschutz.nrw.de/" target="_blank" rel="noopener noreferrer">
               Arbeitsschutzverwaltung Nordrhein-Westfalen
             </a>

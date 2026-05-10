@@ -26,6 +26,7 @@ Privates Informationsportal zum **Arbeitsschutz in Nordrhein-Westfalen**. Es bü
 - Start: https://arbeitsschutz-nrw.info/
 - Offizielle Quellen (Linkliste): https://arbeitsschutz-nrw.info/quellen
 - Arbeitsschutz erklärt (Portal): https://arbeitsschutz-nrw.info/arbeitsschutz-erklaert
+- ArbSchG & Pflichten (Verweise Gesetz/ASV): https://arbeitsschutz-nrw.info/arbeitsschutzgesetz
 - Beratung & Beschwerde (Verweise): https://arbeitsschutz-nrw.info/beratung
 - Fachthemen (Verweise): https://arbeitsschutz-nrw.info/fachthemen
 - FAQ (Verweise): https://arbeitsschutz-nrw.info/faq

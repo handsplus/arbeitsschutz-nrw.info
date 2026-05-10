@@ -42,6 +42,7 @@ export function Footer() {
           <p className="footer-title">Seiten</p>
           <ul>
             <li><Link href="/arbeitsschutz-erklaert">Arbeitsschutz erklärt</Link></li>
+            <li><Link href="/arbeitsschutzgesetz">Arbeitsschutzgesetz (ArbSchG)</Link></li>
             <li><Link href="/fachthemen">Fachthemen</Link></li>
             <li><Link href="/beratung">Beratung & Beschwerde</Link></li>
             <li><Link href="/beratung-handsplus">Beratung durch Health and Safety +</Link></li>
