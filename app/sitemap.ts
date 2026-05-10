@@ -25,7 +25,8 @@ const entries: Entry[] = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date();
+  /** Nur Datum (YYYY-MM-DD): breit kompatibel mit Sitemap-Parsern und GSC. */
+  const lastModified = new Date().toISOString().slice(0, 10);
   return entries.map(({ path, changeFrequency, priority }) => ({
     url: `${base}${path}`,
     lastModified,
