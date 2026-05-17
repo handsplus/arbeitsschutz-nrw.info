@@ -68,10 +68,10 @@ function IconPhone({ className }: { className?: string }) {
 
 const aktuelles = [
   {
-    title: 'NRW: Bundesratsinitiative zum Abbau unnötiger Bürokratie im Arbeitsschutz',
-    text: 'Das Land Nordrhein-Westfalen hat eine Initiative in den Bundesrat eingebracht, die u. a. Änderungen bei Arbeitsschutzausschüssen, Aufzugsprüfungen und digitaler Dokumentation vorsieht. Hintergrund ist die Entlastung von Verwaltung und Wirtschaft bei gleichzeitigem Fokus auf den Schutz der Beschäftigten.',
-    url: 'https://www.land.nrw/pressemitteilung/nordrhein-westfalen-startet-bundesratsinitiative-fuer-den-abbau-von-unnoetiger',
-    date: '2025',
+    title: 'Minister Laumann: Tag der Arbeit – Zeichen für gute Arbeit und Solidarität',
+    text: 'Arbeitsminister Karl-Josef Laumann ruft zur Teilnahme an Maikundgebungen in NRW auf. Der 1. Mai stehe für den Kampf um gute Arbeit für alle Beschäftigten – unabhängig von Arbeitgeber, Branche oder Tätigkeit.',
+    url: 'https://www.arbeitsschutz.nrw.de/minister-laumann-gemeinsam-zum-tag-der-arbeit-sichtbares-zeichen-fuer-gute-arbeit-und-solidaritaet',
+    date: '2026',
   },
   {
     title: 'Kontrollaktion Paketbranche: Teils gravierende Mängel im Arbeitsschutz',
@@ -80,10 +80,22 @@ const aktuelles = [
     date: '2025',
   },
   {
+    title: 'Gebäudereinigung: Aktionstage gegen Schwarzarbeit und illegale Beschäftigung',
+    text: 'Im September 2025 prüften Arbeitsministerium und Generalzolldirektion landesweit 146 Betriebe und mehr als 500 Beschäftigte. In über 80 % der Betriebe wurden Mängel festgestellt – vor allem im Arbeits- und Gesundheitsschutz sowie bei Sozialversicherungsanmeldungen.',
+    url: 'https://www.arbeitsschutz.nrw.de/gemeinsam-gegen-schwarzarbeit-und-illegale-beschaeftigung-der-gebaeudereinigung',
+    date: '2025',
+  },
+  {
     title: '16. Deutscher Gefahrstoffschutzpreis',
-    text: 'Das BMAS zeichnet 2026 vorbildliche Aktivitäten zum Schutz vor Gefahrstoffen aus (10.000 Euro, Motto „Sicher. Besser. Arbeiten.“). Nach Angaben der BAuA endete die Bewerbungsfrist am 30. April 2026; die Preisverleihung ist für den 30. September 2026 vorgesehen.',
-    url: 'https://www.baua.de/DE/Themen/Chemikalien-Biostoffe/Gefahrstoffe/Gefahrstoffschutzpreis/Gefahrstoffschutzpreis',
+    text: 'Das BMAS verleiht 2026 erneut den Preis (10.000 Euro, Motto „Sicher. Besser. Arbeiten.“). Die Bewerbungsfrist endete am 30. April 2026; die Preisverleihung ist für den 30. September 2026 im Rahmen des GDA-Arbeitsschutzforums vorgesehen.',
+    url: 'https://www.arbeitsschutz.nrw.de/16-deutscher-gefahrstoffschutzpreis-innovationen-und-beispiele-fuer-die-arbeit-mit-gefahrstoffen',
     date: '2026',
+  },
+  {
+    title: 'NRW: Bundesratsinitiative zum Abbau unnötiger Bürokratie im Arbeitsschutz',
+    text: 'Das Land Nordrhein-Westfalen hat eine Initiative in den Bundesrat eingebracht, die u. a. Änderungen bei Arbeitsschutzausschüssen, Aufzugsprüfungen und digitaler Dokumentation vorsieht. Hintergrund ist die Entlastung von Verwaltung und Wirtschaft bei gleichzeitigem Fokus auf den Schutz der Beschäftigten.',
+    url: 'https://www.land.nrw/pressemitteilung/nordrhein-westfalen-startet-bundesratsinitiative-fuer-den-abbau-von-unnoetiger',
+    date: '2025',
   },
   {
     title: 'Lungenscreening / Lungenkrebs-Früherkennung in NRW',
@@ -98,9 +110,9 @@ const aktuelles = [
     date: '2025',
   },
   {
-    title: 'DGUV: Hinweise zu Betrugsversuchen und gefälschten Schreiben',
-    text: 'Die DGUV und die Unfallversicherungsträger weisen wiederholt auf gefälschte Schreiben hin (z. B. angebliche „Präventionsmodule“ oder Datenabfragen). Auf der Presse-Übersicht der DGUV finden Sie aktuelle Warnhinweise und Orientierung.',
-    url: 'https://www.dguv.de/de/presse/index.jsp',
+    title: 'DGUV: Warnung vor Betrugsversuchen und gefälschten Schreiben',
+    text: 'Die DGUV warnt vor gefälschten E-Mails und Briefen (z. B. angebliches „DGUV-Präventionsmodul“, Datenüberprüfungen, Zahlungsaufforderungen). Keine Links anklicken, nicht zahlen – Hinweise und Meldewege auf der DGUV-Website.',
+    url: 'https://www.dguv.de/de/mediencenter/hintergrund/warnung-datenueberpruefung/index.jsp',
     date: '2025',
   },
 ];

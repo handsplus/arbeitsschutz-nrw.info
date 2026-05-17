@@ -12,18 +12,23 @@ export const metadata = pageMetadata({
 
 const aktionen = [
   {
-    title: 'Faire Arbeit in der Fleischindustrie',
-    text: 'Landesweite Überwachung zur Einhaltung von Arbeitsschutz und fairen Arbeitsbedingungen in der Fleischindustrie.',
-    url: 'https://www.arbeitsschutz.nrw.de/arbeitsschutz-erklaert/landesweite-ueberwachungsaktionen',
-  },
-  {
-    title: 'Friseurbranche',
-    text: 'Schwerpunktaktionen in Friseurbetrieben zu Sicherheit und Gesundheit (z. B. Gefahrstoffe, Hautschutz, Arbeitszeiten).',
-    url: 'https://www.arbeitsschutz.nrw.de/arbeitsschutz-erklaert/landesweite-ueberwachungsaktionen',
+    title: 'Kurier-, Express- und Paketbranche (KEP)',
+    text: 'Kontrollaktion Mai–August 2025: u. a. 57 Subunternehmen und 225 Zusteller geprüft – teils gravierende Mängel im Arbeitsschutz.',
+    url: 'https://www.arbeitsschutz.nrw.de/kontrollaktion-der-paketbranche-teils-gravierende-maengel-im-arbeitsschutz',
   },
   {
     title: 'Gebäudereinigung',
-    text: 'Überwachung und Beratung in der Gebäudereinigungsbranche zu Arbeitsschutz und Arbeitsbedingungen.',
+    text: 'Aktionstage September 2025 gegen Schwarzarbeit und illegale Beschäftigung: 146 Betriebe geprüft, in über 80 % Mängel (u. a. Arbeits- und Gesundheitsschutz).',
+    url: 'https://www.arbeitsschutz.nrw.de/gemeinsam-gegen-schwarzarbeit-und-illegale-beschaeftigung-der-gebaeudereinigung',
+  },
+  {
+    title: 'Friseurbranche',
+    text: 'Gemeinsame Kontrollaktion 2024: über 400 Salons und Barbershops geprüft – gravierende Mängel und illegale Beschäftigung festgestellt.',
+    url: 'https://www.arbeitsschutz.nrw.de/kontrollen-der-friseurbranche-gravierende-maengel-und-illegale-beschaeftigung-aufgedeckt',
+  },
+  {
+    title: 'Faire Arbeit in der Fleischindustrie',
+    text: 'Landesweite Überwachung zur Einhaltung von Arbeitsschutz und fairen Arbeitsbedingungen in der Fleischindustrie.',
     url: 'https://www.arbeitsschutz.nrw.de/arbeitsschutz-erklaert/landesweite-ueberwachungsaktionen',
   },
   {
