@@ -13,10 +13,10 @@ const graph = [
     '@type': 'WebSite',
     '@id': WEBSITE_ID,
     url: SITE_URL,
-    name: 'Arbeitsschutz NRW – Informationsportal',
-    alternateName: ['arbeitsschutz-nrw.info', 'Arbeitsschutz Nordrhein-Westfalen Portal'],
+    name: 'Arbeitsschutz NRW – NRW-Navigator',
+    alternateName: ['arbeitsschutz-nrw.info', 'Arbeitsschutz Nordrhein-Westfalen Navigator'],
     description:
-      'Arbeitsschutz NRW: Orientierung zu ArbSchG, Gefährdungsbeurteilung, Unterweisung und offiziellen Stellen (Arbeitsschutzverwaltung NRW, LfGA, KomNet, DGUV).',
+      'NRW-Navigator zum Arbeitsschutz: Orientierung zu ArbSchG, Gefährdungsbeurteilung, Unterweisung und offiziellen Stellen (ASV NRW, LfGA, KomNet, DGUV). Für Arbeitgeber optional mit Hinweis auf Health and Safety +.',
     inLanguage: 'de-DE',
     publisher: { '@id': PUBLISHER_ID },
   },

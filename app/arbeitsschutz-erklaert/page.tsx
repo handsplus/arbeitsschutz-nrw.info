@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { EmployerStickyCta } from '@/components/EmployerStickyCta';
 import { HandsplusTeaser } from '@/components/HandsplusTeaser';
 import { SourceLink } from '@/components/SourceLink';
 import { pageMetadata } from '@/lib/seo';
@@ -152,8 +154,16 @@ const blocks = [
 
 export default function ArbeitsschutzErklaertPage() {
   return (
-    <div className="container">
-      <div className="page-head">
+    <>
+      <EmployerStickyCta />
+      <div className="container">
+        <Breadcrumbs
+          items={[
+            { label: 'Start', href: '/' },
+            { label: 'Arbeitsschutz erklärt' },
+          ]}
+        />
+        <div className="page-head">
         <h1>Arbeitsschutz erklärt</h1>
         <p className="page-intro">
           Wie funktioniert der Arbeitsschutz in Deutschland? Was sind die
@@ -193,6 +203,7 @@ export default function ArbeitsschutzErklaertPage() {
           <li><a href="https://www.arbeitsschutz.nrw.de/karriere/karriereeinstieg-bei-der-arbeitsschutzverwaltung" target="_blank" rel="noopener noreferrer">Karriereeinstieg bei der Arbeitsschutzverwaltung</a></li>
         </ul>
       </section>
-    </div>
+      </div>
+    </>
   );
 }

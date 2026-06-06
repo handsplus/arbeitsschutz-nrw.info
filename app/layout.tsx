@@ -4,14 +4,15 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { CookieBanner } from '@/components/CookieBanner';
 import { SiteStructuredData } from '@/components/SiteStructuredData';
+import { VercelAnalytics } from '@/components/VercelAnalytics';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Arbeitsschutz NRW – Informationsportal (Links & Orientierung)',
+    default: 'Arbeitsschutz NRW – NRW-Navigator (Orientierung & Links)',
     template: '%s | Arbeitsschutz NRW',
   },
   description:
-    'Arbeitsschutz NRW: ArbSchG, Gefährdungsbeurteilung, Unterweisung – Verweise zu ASV NRW, LfGA, KomNet, DGUV.',
+    'Arbeitsschutz NRW-Navigator: In 30 Sekunden zur richtigen Stelle – ASV NRW, KomNet, DGUV. Privates Portal von Health and Safety +.',
   keywords: [
     'Arbeitsschutz NRW',
     'Arbeitsschutzgesetz',
@@ -37,17 +38,17 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'de_DE',
     url: 'https://arbeitsschutz-nrw.info',
-    siteName: 'Arbeitsschutz NRW – Informationsportal',
-    title: 'Arbeitsschutz NRW – Informationsportal',
+    siteName: 'Arbeitsschutz NRW – NRW-Navigator',
+    title: 'Arbeitsschutz NRW – NRW-Navigator',
     description:
-      'Arbeitsschutz NRW: ArbSchG, Gefährdungsbeurteilung, Unterweisung – ASV, LfGA, KomNet, DGUV.',
+      'In 30 Sekunden zur richtigen Stelle: ASV NRW, KomNet, DGUV. Privates Portal von Health and Safety +.',
     images: [{ url: '/icon.png', width: 512, height: 512, alt: 'Arbeitsschutz NRW Informationsportal' }],
   },
   twitter: {
     card: 'summary',
-    title: 'Arbeitsschutz NRW – Informationsportal',
+    title: 'Arbeitsschutz NRW – NRW-Navigator',
     description:
-      'Arbeitsschutz NRW: ArbSchG, Gefährdungsbeurteilung, Unterweisung – ASV, LfGA, KomNet, DGUV.',
+      'In 30 Sekunden zur richtigen Stelle: ASV NRW, KomNet, DGUV. Privates Portal von Health and Safety +.',
   },
   metadataBase: new URL('https://arbeitsschutz-nrw.info'),
   robots: {
@@ -143,6 +144,7 @@ export default function RootLayout({
         <main id="main-content" className="main-content" tabIndex={-1}>{children}</main>
         <Footer />
         <CookieBanner />
+        <VercelAnalytics />
       </body>
     </html>
   );

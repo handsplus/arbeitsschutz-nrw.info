@@ -1,6 +1,7 @@
 import { HandsplusTeaser } from '@/components/HandsplusTeaser';
 import { SourceLink } from '@/components/SourceLink';
 import { pageMetadata } from '@/lib/seo';
+import type { HandsplusTeaserVariant } from '@/lib/handsplusLeistungen';
 
 export const metadata = pageMetadata({
   path: '/fachthemen',
@@ -16,7 +17,14 @@ export const metadata = pageMetadata({
   ],
 });
 
-const kategorien = [
+const kategorien: {
+  title: string;
+  topics: string[];
+  desc: string;
+  komnet: string;
+  teaser?: HandsplusTeaserVariant;
+  teaserSuffix?: string;
+}[] = [
   {
     title: 'Anlagen, Betrieb & Produkte',
     topics: [
@@ -68,6 +76,8 @@ const kategorien = [
     ],
     desc: 'Gestaltung von Arbeitsplätzen, Gesundheitsschutz, Ergonomie und Umgebungsbedingungen.',
     komnet: 'https://www.komnet.nrw.de/',
+    teaser: 'sigeko',
+    teaserSuffix: 'baustelle',
   },
   {
     title: 'Betriebliche Organisation',
@@ -81,6 +91,8 @@ const kategorien = [
     ],
     desc: 'Gefährdungsbeurteilung, Organisation des Arbeitsschutzes im Betrieb, Beauftragte.',
     komnet: 'https://www.komnet.nrw.de/',
+    teaser: 'arbeitsschutz',
+    teaserSuffix: 'organisation',
   },
   {
     title: 'Besonders schutzbedürftige Personengruppen',
@@ -146,17 +158,25 @@ export default function FachthemenPage() {
         </p>
         <div className="topic-categories">
           {kategorien.map((kat) => (
-            <div key={kat.title} className="card topic-card">
-              <h3>{kat.title}</h3>
-              <p className="topic-desc">{kat.desc}</p>
-              <ul>
-                {kat.topics.map((t) => (
-                  <li key={t}>{t}</li>
-                ))}
-              </ul>
-              <a href={kat.komnet} target="_blank" rel="noopener noreferrer" className="external">
-                Themen bei KomNet durchsuchen →
-              </a>
+            <div key={kat.title} className="topic-category-wrap">
+              <div className="card topic-card">
+                <h3>{kat.title}</h3>
+                <p className="topic-desc">{kat.desc}</p>
+                <ul>
+                  {kat.topics.map((t) => (
+                    <li key={t}>{t}</li>
+                  ))}
+                </ul>
+                <a href={kat.komnet} target="_blank" rel="noopener noreferrer" className="external">
+                  Themen bei KomNet durchsuchen →
+                </a>
+              </div>
+              {kat.teaser && (
+                <HandsplusTeaser
+                  variant={kat.teaser}
+                  idSuffix={kat.teaserSuffix ?? kat.title}
+                />
+              )}
             </div>
           ))}
         </div>
@@ -212,10 +232,6 @@ export default function FachthemenPage() {
           </a>
         </p>
         <SourceLink href="https://www.dguv.de/" label="DGUV" />
-      </section>
-
-      <section className="content-section">
-        <HandsplusTeaser variant="schulungen" idSuffix="fachthemen" />
       </section>
     </div>
   );

@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { Breadcrumbs } from '@/components/Breadcrumbs';
+import { EmployerStickyCta } from '@/components/EmployerStickyCta';
 import { HandsplusTeaser } from '@/components/HandsplusTeaser';
 import { SourceLink } from '@/components/SourceLink';
 import { pageMetadata } from '@/lib/seo';
@@ -39,8 +41,16 @@ const primarySources = [
 
 export default function ArbeitsschutzgesetzPage() {
   return (
-    <div className="container">
-      <div className="page-head">
+    <>
+      <EmployerStickyCta />
+      <div className="container">
+        <Breadcrumbs
+          items={[
+            { label: 'Start', href: '/' },
+            { label: 'ArbSchG & Pflichten' },
+          ]}
+        />
+        <div className="page-head">
         <h1>Arbeitsschutzgesetz (ArbSchG) und Pflichten</h1>
         <p className="page-intro">
           Das <strong>Arbeitsschutzgesetz (ArbSchG)</strong> ist Bundesrecht und gilt in ganz Deutschland –
@@ -97,6 +107,7 @@ export default function ArbeitsschutzgesetzPage() {
       <section className="content-section">
         <HandsplusTeaser variant="arbeitsschutz" idSuffix="arbschg" />
       </section>
-    </div>
+      </div>
+    </>
   );
 }

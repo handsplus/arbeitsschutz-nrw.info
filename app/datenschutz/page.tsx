@@ -58,6 +58,22 @@ export default function DatenschutzPage() {
       </section>
 
       <section className="content-section">
+        <h2>Web-Analyse (Vercel Analytics)</h2>
+        <p>
+          Zur Verbesserung des Angebots nutzen wir auf dieser Website{' '}
+          <strong>Vercel Analytics</strong> (Anbieter: Vercel Inc.). Dabei werden
+          anonymisierte Nutzungsdaten (z. B. Seitenaufrufe, Herkunftsland,
+          Gerätetyp) ohne Werbe-Cookies ausgewertet. Beim Klick auf
+          Beratungs-Links (Telefon, E-Mail, Erstberatung) können anonyme
+          Ereignisse erfasst werden — ohne Profilbildung. Details:{' '}
+          <a href="https://vercel.com/docs/analytics" target="_blank" rel="noopener noreferrer">
+            Vercel Analytics Dokumentation
+          </a>
+          .
+        </p>
+      </section>
+
+      <section className="content-section">
         <h2>Hosting und Zugriffsdaten</h2>
         <p>
           Beim Aufruf der Website können der Zugriffszeitpunkt, die aufgerufene

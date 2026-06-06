@@ -31,6 +31,11 @@ export default function ImpressumPage() {
           Telefon: <a href="tel:+4915228261619">0152 282 61619</a>
           <br />
           Kontakt: <a href="https://www.handsplus.de/kontakt" target="_blank" rel="noopener noreferrer">www.handsplus.de/kontakt</a>
+          <br />
+          Vollständige Unternehmensangaben:{' '}
+          <a href="https://www.handsplus.de/impressum" target="_blank" rel="noopener noreferrer">
+            Impressum auf handsplus.de
+          </a>
         </p>
       </section>
 

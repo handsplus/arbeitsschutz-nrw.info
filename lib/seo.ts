@@ -15,7 +15,7 @@ const OG_IMAGE = {
   alt: 'Arbeitsschutz NRW Informationsportal',
 } as const;
 
-const SITE_NAME_OG = 'Arbeitsschutz NRW – Informationsportal';
+const SITE_NAME_OG = 'Arbeitsschutz NRW – NRW-Navigator';
 
 /** Einheitliche Meta-Tags pro Unterseite (Canonical, Open Graph, Twitter). */
 export function pageMetadata(opts: {
@@ -54,7 +54,7 @@ export function homeMetadata(description: string): Metadata {
     description,
     alternates: { canonical: SITE_URL },
     openGraph: {
-      title: 'Arbeitsschutz NRW – Informationsportal (Links & Orientierung)',
+      title: 'Arbeitsschutz NRW – NRW-Navigator',
       description,
       url: SITE_URL,
       locale: 'de_DE',
@@ -64,7 +64,7 @@ export function homeMetadata(description: string): Metadata {
     },
     twitter: {
       card: 'summary',
-      title: 'Arbeitsschutz NRW – Informationsportal',
+      title: 'Arbeitsschutz NRW – NRW-Navigator',
       description,
     },
     keywords: [

@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { HandsplusTeaser } from '@/components/HandsplusTeaser';
 import { SourceLink } from '@/components/SourceLink';
 import { pageMetadata } from '@/lib/seo';
 
@@ -253,7 +252,13 @@ export default function BeratungPage() {
       </section>
 
       <section className="content-section">
-        <HandsplusTeaser variant="general" idSuffix="beratung" />
+        <div className="employer-cta-compact">
+          <strong>Arbeitgeber?</strong> Professionelle Betreuung im Betrieb (Gefährdungsbeurteilung,
+          FaSi, SiGeKo):{' '}
+          <Link href="/beratung-handsplus">Health and Safety + – Erstberatung</Link>
+          {' · '}
+          <Link href="/#portal-navigator-title">Zum NRW-Navigator auf der Startseite</Link>
+        </div>
       </section>
     </div>
   );

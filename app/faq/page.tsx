@@ -1,5 +1,5 @@
+import Link from 'next/link';
 import { FaqStructuredData } from '@/components/FaqStructuredData';
-import { HandsplusTeaser } from '@/components/HandsplusTeaser';
 import { SourceLink } from '@/components/SourceLink';
 import { portalFaqs } from '@/lib/faqContent';
 import { pageMetadata } from '@/lib/seo';
@@ -66,7 +66,14 @@ export default function FAQPage() {
       </section>
 
       <section className="content-section">
-        <HandsplusTeaser variant="general" idSuffix="faq" />
+        <div className="employer-cta-compact">
+          <strong>Arbeitgeber?</strong> Pflichten im Betrieb umsetzen:{' '}
+          <Link href="/#portal-navigator-title">NRW-Navigator</Link>
+          {' · '}
+          <Link href="/branchen">Branchen-Guides</Link>
+          {' · '}
+          <Link href="/beratung-handsplus">Erstberatung H&amp;S+</Link>
+        </div>
       </section>
     </div>
     </>

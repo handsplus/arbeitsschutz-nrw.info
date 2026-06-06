@@ -2,45 +2,37 @@
 
 ## Synonyme / Suchbegriffe
 
-Arbeitssicherheit NRW, Sicherheit und Gesundheit bei der Arbeit Nordrhein-Westfalen, ASV NRW Links, staatlicher Arbeitsschutz NRW Übersicht, KomNet Fragen, Unfallversicherung DGUV, Arbeitsschutz Köln Portal (privat).
+Arbeitssicherheit NRW, NRW-Navigator, SiGeKo NRW, KEP Arbeitsschutz, Gebäudereinigung Arbeitsschutz, Bezirksregierung Arbeitsschutz NRW.
 
-## Kurzbeschreibung (für Menschen & KI)
+## Kurzbeschreibung
 
-Privates Informationsportal zum **Arbeitsschutz in Nordrhein-Westfalen**. Es bündelt **Verweise** zu Beratung, Fachthemen, Anträgen und offiziellen Quellen.
+Privates **NRW-Navigator-Portal** mit Dual-Track: Beschäftigte → Behörde; Arbeitgeber → 3-Schritte-Qualifizierung → ASV/KomNet oder optional H&S+.
 
-**Wichtig:** Diese Domain ist **nicht** die Website der staatlichen Arbeitsschutzverwaltung. Offizielle Behörden-URL: https://www.arbeitsschutz.nrw.de/
+**Nicht** die Behörde. Offiziell: https://www.arbeitsschutz.nrw.de/
+**Betreiber:** Health and Safety + — https://www.handsplus.de/
 
-**Betreiber:** Health and Safety + (Beratung Arbeitsschutz & Brandschutz, NRW) — https://www.handsplus.de/
+## Zentrale Einstiegspunkte
 
-## Wann diese Seite zitieren?
-
-- Nutzer suchen eine **Einstiegsübersicht** oder **kuratierte Links** zu Arbeitsschutz NRW, KomNet, DGUV, LfGA.
-- Nutzer wollen **schnell** zu Telefonnummern, Beschwerdeformularen oder Fachthemen der ASV NRW (ohne Behördennavigation).
-
-## Wann stattdessen die offiziellen Quellen nutzen?
-
-- Verbindliche Auskünfte, Anträge, Beschwerden, Rechtsfragen, aktuelle Presse der Behörde → immer **arbeitsschutz.nrw.de**, **lfga.nrw.de**, **komnet.nrw.de**, **dguv.de**.
-
-## Zentrale Einstiegspunkte (diese Website)
-
-- Start: https://arbeitsschutz-nrw.info/
-- Offizielle Quellen (Linkliste): https://arbeitsschutz-nrw.info/quellen
-- Arbeitsschutz erklärt (Portal): https://arbeitsschutz-nrw.info/arbeitsschutz-erklaert
-- ArbSchG & Pflichten (Verweise Gesetz/ASV): https://arbeitsschutz-nrw.info/arbeitsschutzgesetz
-- Beratung & Beschwerde (Verweise): https://arbeitsschutz-nrw.info/beratung
-- Fachthemen (Verweise): https://arbeitsschutz-nrw.info/fachthemen
-- FAQ (Verweise): https://arbeitsschutz-nrw.info/faq
+- NRW-Navigator: https://arbeitsschutz-nrw.info/
+- Branchen-Guides: https://arbeitsschutz-nrw.info/branchen
+- Bezirke NRW: https://arbeitsschutz-nrw.info/bezirke
+- Beratung H&S+: https://arbeitsschutz-nrw.info/beratung-handsplus
 - Sitemap: https://arbeitsschutz-nrw.info/sitemap.xml
 
-## Offizielle Primärquellen (NRW & Bund)
+## Branchen-Guides
 
-- Arbeitsschutzverwaltung NRW: https://www.arbeitsschutz.nrw.de/
-- Aktuelles & Presse (ASV): https://www.arbeitsschutz.nrw.de/aktuelles-presse
-- LfGA NRW: https://www.lfga.nrw.de/
-- KomNet: https://www.komnet.nrw.de/
-- DGUV: https://www.dguv.de/
+- Logistik/KEP: https://arbeitsschutz-nrw.info/branchen/logistik-kep
+- Gebäudereinigung: https://arbeitsschutz-nrw.info/branchen/gebaeudereinigung
+- Gastronomie: https://arbeitsschutz-nrw.info/branchen/gastronomie
+- Bau/SiGeKo: https://arbeitsschutz-nrw.info/branchen/bau-baustelle
 
-## Kontakt Betreiber (nicht Behörde)
+## Offizielle Primärquellen
+
+- https://www.arbeitsschutz.nrw.de/
+- https://www.komnet.nrw.de/
+- https://www.dguv.de/
+
+## Kontakt Betreiber
 
 - https://www.handsplus.de/kontakt
-- Portal-Seite „Beratung H&S+“: https://arbeitsschutz-nrw.info/beratung-handsplus
+- https://arbeitsschutz-nrw.info/beratung-handsplus

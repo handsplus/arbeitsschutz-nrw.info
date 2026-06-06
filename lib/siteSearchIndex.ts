@@ -16,10 +16,10 @@ export type SiteSearchItem = {
 export const siteSearchIndex: SiteSearchItem[] = [
   {
     id: 'start',
-    title: 'Startseite',
+    title: 'NRW-Navigator (Start)',
     href: '/',
-    hint: 'Überblick',
-    keywords: ['start', 'home', 'ueberblick', 'portal'],
+    hint: 'Persona-Auswahl, Arbeitgeber-Check',
+    keywords: ['start', 'home', 'navigator', 'ueberblick', 'portal', 'arbeitgeber', 'beschaeftigte'],
   },
   {
     id: 'erklaert',
@@ -57,6 +57,27 @@ export const siteSearchIndex: SiteSearchItem[] = [
       'gbu',
       'bundesrecht',
     ],
+  },
+  {
+    id: 'branchen',
+    title: 'Branchen-Guides NRW',
+    href: '/branchen',
+    hint: 'KEP, Reinigung, Gastronomie, Bau',
+    keywords: ['branche', 'kep', 'logistik', 'paket', 'reinigung', 'gastro', 'bau', 'sigeko'],
+  },
+  {
+    id: 'branche-kep',
+    title: 'Arbeitsschutz Logistik & KEP',
+    href: '/branchen/logistik-kep',
+    hint: 'Paketbranche NRW',
+    keywords: ['kep', 'logistik', 'paket', 'kurier', 'zusteller'],
+  },
+  {
+    id: 'bezirke',
+    title: 'Bezirke & Zuständigkeit NRW',
+    href: '/bezirke',
+    hint: 'Bezirksregierungen, Erstberatung',
+    keywords: ['bezirk', 'zustaendigkeit', 'bezirksregierung', 'koeln', 'duesseldorf', 'beschwerde'],
   },
   {
     id: 'fachthemen',

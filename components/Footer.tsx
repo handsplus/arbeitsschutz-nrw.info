@@ -6,12 +6,13 @@ const officialLinks = [
   { href: 'https://www.dguv.de/', label: 'DGUV – Deutsche Gesetzliche Unfallversicherung (offiziell)' },
 ];
 
-/** Weitere Angebote von Health and Safety + (verwandte Webauftritte) */
+/** Weitere Angebote von Health and Safety + – thematisch verknüpft */
 const relatedSites = [
-  { href: 'https://sigeko.koeln', label: 'sigeko.koeln' },
-  { href: 'https://arbeitssicherheit.nrw', label: 'arbeitssicherheit.nrw' },
-  { href: 'https://brandschutzkoeln.com', label: 'brandschutzkoeln.com' },
-  { href: 'https://arbeitssicherheitkoeln.de', label: 'arbeitssicherheitkoeln.de' },
+  { href: 'https://arbeitssicherheit.nrw', label: 'arbeitssicherheit.nrw – FaSi & Betreuung' },
+  { href: 'https://sigeko.koeln', label: 'sigeko.koeln – SiGeKo Baustellen' },
+  { href: 'https://brandschutzkoeln.com', label: 'brandschutzkoeln.com – Brandschutz' },
+  { href: 'https://arbeitssicherheitkoeln.de', label: 'arbeitssicherheitkoeln.de – Köln' },
+  { href: 'https://www.handsplus.de/', label: 'handsplus.de – Alle Leistungen' },
 ];
 
 export function Footer() {
@@ -44,6 +45,8 @@ export function Footer() {
             <li><Link href="/arbeitsschutz-erklaert">Arbeitsschutz erklärt</Link></li>
             <li><Link href="/arbeitsschutzgesetz">Arbeitsschutzgesetz (ArbSchG)</Link></li>
             <li><Link href="/fachthemen">Fachthemen</Link></li>
+            <li><Link href="/branchen">Branchen-Guides</Link></li>
+            <li><Link href="/bezirke">Bezirke NRW</Link></li>
             <li><Link href="/beratung">Beratung & Beschwerde</Link></li>
             <li><Link href="/beratung-handsplus">Beratung durch Health and Safety +</Link></li>
             <li><Link href="/faq">FAQ</Link></li>
