@@ -21,6 +21,8 @@ export default function ImpressumPage() {
         <p>
           <strong>Health and Safety +</strong>
           <br />
+          Inhaber: Amin Korkae
+          <br />
           Barcelona-Allee 12
           <br />
           51103 Köln
