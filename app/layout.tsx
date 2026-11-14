@@ -66,6 +66,8 @@ export default function RootLayout({
   return (
     <html lang="de">
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="alternate" type="text/plain" href="/llms.txt" title="KI- und Tool-Hinweise (llms.txt)" />
         <link rel="author" href="/humans.txt" type="text/plain" />
         <SiteStructuredData />

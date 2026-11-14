@@ -153,8 +153,8 @@ export function getExpertResult(): NavigatorResult {
         external: true,
       },
       {
-        label: 'DGUV – Themen A–Z',
-        href: 'https://www.dguv.de/de/themen-a-z/index.jsp',
+        label: 'DGUV – Prävention',
+        href: 'https://www.dguv.de/de/praevention/index.jsp',
         external: true,
       },
     ],
