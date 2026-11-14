@@ -227,8 +227,8 @@ export default function FachthemenPage() {
             DGUV – Prävention →
           </a>
           {' · '}
-          <a href="https://www.dguv.de/de/themen-a-z/index.jsp" target="_blank" rel="noopener noreferrer" className="external">
-            DGUV – Themen A–Z →
+          <a href="https://www.dguv.de/de/praevention/vorschriften_regeln/index.jsp" target="_blank" rel="noopener noreferrer" className="external">
+            DGUV – Vorschriften &amp; Regeln →
           </a>
         </p>
         <SourceLink href="https://www.dguv.de/" label="DGUV" />

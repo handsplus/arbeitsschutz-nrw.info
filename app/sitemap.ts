@@ -3,6 +3,11 @@ import { getAllBrancheSlugs } from '@/lib/branchenContent';
 
 const BASE = 'https://arbeitsschutz-nrw.info';
 
+/** GSC-kompatibel: lastmod als YYYY-MM-DD (ohne Uhrzeit). */
+function lastmodDate(): string {
+  return new Date().toISOString().slice(0, 10);
+}
+
 const staticRoutes: { path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[0]['changeFrequency'] }[] = [
   { path: '/', priority: 1, changeFrequency: 'weekly' },
   { path: '/branchen', priority: 0.9, changeFrequency: 'monthly' },
@@ -22,17 +27,17 @@ const staticRoutes: { path: string; priority: number; changeFrequency: MetadataR
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
+  const lastModified = lastmodDate();
   const branchen = getAllBrancheSlugs().map((slug) => ({
     url: `${BASE}/branchen/${slug}`,
-    lastModified: now,
+    lastModified,
     changeFrequency: 'monthly' as const,
     priority: 0.88,
   }));
 
   const staticEntries = staticRoutes.map(({ path, priority, changeFrequency }) => ({
     url: `${BASE}${path}`,
-    lastModified: now,
+    lastModified,
     changeFrequency,
     priority,
   }));
